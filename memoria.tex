@@ -26,6 +26,7 @@
 \usepackage[spanish]{babel} % Comenta esta línea si tu memoria es en inglés
 \usepackage{url}
 %\usepackage[dvipdfm]{graphicx}
+\usepackage{url}
 \usepackage{graphicx}
 \usepackage{float}  %% H para posicionar figuras
 \usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de índice
@@ -292,7 +293,7 @@ Consta de la parte de Servidor, y la parte de cliente.
 \centering
 \includegraphics[scale=0.1]{img/django-logo-negative.png}
 \end{figure}  
-Django es un framework de desarrollo web de código abierto, escrito en python, que respeta el patrón de diseño conocido como \textbf{Modelo - Vista - Controlador}. En su origen, fue desarrollado para gestionar páginas orientadas a noticias, pero en julio fue liberada al público bajo una licencia BSD en el año 2005.
+Django\cite{Django} es un framework de desarrollo web de código abierto, escrito en python, que respeta el patrón de diseño conocido como \textbf{Modelo - Vista - Controlador}. En su origen, fue desarrollado para gestionar páginas orientadas a noticias, pero en julio fue liberada al público bajo una licencia BSD en el año 2005.
 Su principal meta es facilitar la creación de sitios web complejos, siguiendo el principio DRY, ``Don't Repeat Youself''. \\
 \textbf{Características principales:}
 \begin{itemize}
@@ -332,7 +333,7 @@ La salud actual y futura de Django es muy buena, pues ahora está siendo utilizad
 \centering
 \includegraphics[scale=0.1]{img/Python-logo.png} 
 \end{figure}
-Python es un lenguaje de programación de muy alto nivel, multiparadigma, con el que se puede desarrollar cualquier programa, desde programas para servidores, hasta páginas web. Es un lenguaje interpretado. Este tipo de lenguajes tienen la ventaja de ser independientes de la máquina y del sistema operativo que los ejecute, puesto que no tiene instrucciones propias del procesador. No tiene que compilarse, por lo que resulta más rápido para desarrollarlo y resolver inconvenientes, por contra, su principal desventaja es la velocidad, es algo que debemos tener muy en cuenta a la hora de seleccionar el lenguaje que vamos a utilizar (En nuestro caso, la velocidad de la aplicación no es algo determinante).
+Python\cite{Python} es un lenguaje de programación de muy alto nivel, multiparadigma, con el que se puede desarrollar cualquier programa, desde programas para servidores, hasta páginas web. Es un lenguaje interpretado. Este tipo de lenguajes tienen la ventaja de ser independientes de la máquina y del sistema operativo que los ejecute, puesto que no tiene instrucciones propias del procesador. No tiene que compilarse, por lo que resulta más rápido para desarrollarlo y resolver inconvenientes, por contra, su principal desventaja es la velocidad, es algo que debemos tener muy en cuenta a la hora de seleccionar el lenguaje que vamos a utilizar (En nuestro caso, la velocidad de la aplicación no es algo determinante).
 Decíamos al principio que es un lenguaje multiparadigma, debido a que soporta programación imperativa, programación funcional, y como no, orientación a objetos. Esto ofrece mucha libertad a los programadores.
 Tiene una sintaxis limpia y hace que sea fácilmente legible. En los últimos años se ha popularizado por las siguientes razones:
 \begin{itemize}
@@ -350,7 +351,7 @@ Es un lenguaje apropiado para empezar a en el mundo del desarrollador, pese a qu
 \includegraphics[scale=0.2]{img/githublogo.jpg} 
 \end{figure}
 
-GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
+GitHub\cite{GitHub} es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
 En este proyecto, he utilizado la API (Application Programming Interfaces) de GitHub para conocer los Forks que tenía un repositorio y también para conocer la fecha de la última actualización.
 \begin{lstlisting}[frame=single]
 GET /repos/:owner/:repo/forks
@@ -359,7 +360,7 @@ GET /repos/:owner/:repo/forks
 
 \subsection{Pylint}
 
-Pylint es un programa de código abierto\footnote{\url{https://github.com/PyCQA/pylint}} que analiza código Python. Nos ofrece información sobre cómo está escrito el código analizado, según las normas de estilo PEP-8, y clasifica los errores en 5 tipos, a saber:
+Pylint\cite{Pylint} es un programa de código abierto\footnote{\url{https://github.com/PyCQA/pylint}} que analiza código Python. Nos ofrece información sobre cómo está escrito el código analizado, según las normas de estilo PEP-8, y clasifica los errores en 5 tipos, a saber:
 \begin{itemize}
 \item Refactorización: Asociado a alguna violación en alguna buena práctica.
 \item Convención: Asociado a una violación del estándar de codificación.
@@ -385,7 +386,7 @@ Al final del análisis, Pylint nos ofrece una puntuación de dicho código.
 \includegraphics[scale=0.8]{img/sqlite3.jpg} 
 \end{figure}
 
-SQLite es un sistema de gestión de Bases de datos relacional, compatible con ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad), escrita en C. Es de dominio público. \\
+SQLite\cite{Sqlite} es un sistema de gestión de Bases de datos relacional, compatible con ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad), escrita en C. Es de dominio público. \\
 A diferencia de los sistema de gestión de bases de datos cliente-servidor, el motor de SQLite no es un proceso independiente con el que el programa principal se comunica. En lugar de eso, la biblioteca SQLite se enlaza con el programa, pasando a ser parte integral del mismo. El programa utiliza la funcionalidad de SQLite a través de llamadas simples a subrutinas y funciones. Esto reduce la latencia en el acceso a la base de datos, debido a que las llamadas a funciones son más eficientes que la comunicación entre procesos. El conjunto de la base de datos (definiciones, tablas, índices, y los propios datos), son guardados como un único fichero estándar en la máquina host. Este diseño simple se logra bloqueando todo el fichero de base de datos al principio de cada transacción.
 
 En su versión 3, SQLite permite bases de datos de hasta 2 Terabytes de tamaño, y también permite la inclusión de campos tipo BLOB (Binary large object).
@@ -397,7 +398,7 @@ En su versión 3, SQLite permite bases de datos de hasta 2 Terabytes de tamaño, y
 \centering
 \includegraphics[scale=0.3]{img/HTML5.png} 
 \end{figure}
-Es la última versión de HTML (HyperText Markup Language). El término representa dos conceptos diferentes:
+Es la última versión de HTML\cite{HTML5} (HyperText Markup Language). El término representa dos conceptos diferentes:
 \begin{itemize}
 \item Se trata de una nueva versión de HTML, con nuevos atributos, elementos y comportamientos.
 \item Cuenta con más tecnologías que permiten a las aplicaciones Web y sitios Web, ser más diversos. A este conjunto se le llama ``HTML5 y amigos'', comunmente HTML5.
@@ -423,7 +424,7 @@ A principios de los años 90, la mayoría de usuarios que se conectaban a Internet
 
 Con unas aplicaciones web cada vez más complejas y una velocidad de navegación tan lenta, surgió la necesidad de un lenguaje de programación que se ejecutara en el navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un formulario, no se le hacía esperar mucho tiempo hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.
 
-JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas.
+JavaScript\cite{HTML5} es un lenguaje de programación que se utiliza principalmente para crear páginas web dinámicas.
 
 Una página web dinámica es aquella que incorpora efectos como texto que aparece y desaparece, animaciones, acciones que se activan al pulsar botones y ventanas con mensajes de aviso al usuario.
 
@@ -452,7 +453,7 @@ Por contra, sus \textbf{desventajas } son:
 
 Las hojas de estilo llegaron después del lenguaje de etiquetas SGML,cerca del año 1970. Desde la creación de SGML, se observó la necesidad de definir un mecanismo que permitiera aplicar de forma consistente diferentes estilos a los documentos electrónicos.
 
-El gran impulso de los lenguajes de hojas de estilo se produjo con la llegada de Internet y el crecimiento exponencial del lenguaje HTML para la creación de documentos electrónicos. La guerra de navegadores y la falta de un estándar para la definición de los estilos dificultaban la creación de documentos con la misma apariencia en diferentes navegadores. Finalmente el organismo W3C, encargado de definir los estándares relacionados con la web, aceptaron una propuesta que llamaron CSS (Cascading Style Sheets).
+El gran impulso de los lenguajes de hojas de estilo se produjo con la llegada de Internet y el crecimiento exponencial del lenguaje HTML para la creación de documentos electrónicos. La guerra de navegadores y la falta de un estándar para la definición de los estilos dificultaban la creación de documentos con la misma apariencia en diferentes navegadores. Finalmente el organismo W3C, encargado de definir los estándares relacionados con la web, aceptaron una propuesta que llamaron CSS\cite{HTML5} (Cascading Style Sheets).
 
 En resumen, CSS3 es una tecnología que nos permite crear páginas web de una manera más exacta, y podemos hacer cosas que no podríamos hacer sólo con HTML, como incluir márgenes, tipos de letra, fondos, colores...
 \\
@@ -462,7 +463,7 @@ En resumen, CSS3 es una tecnología que nos permite crear páginas web de una mane
 \includegraphics[scale=0.2]{img/bootstrap.png} 
 \end{figure}
 
-Bootstrap fue desarrollado por Mark Otto y Jacbod Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia a través de herramientas internas. Antes de Bootstrap, se usaban varias librerías para el desarrollo de interfaces de usuario, las cuales guiaban a inconsistencias y a una carga de trabajo alta en su mantenimiento.
+Bootstrap\cite{Bootstrap} fue desarrollado por Mark Otto y Jacbod Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia a través de herramientas internas. Antes de Bootstrap, se usaban varias librerías para el desarrollo de interfaces de usuario, las cuales guiaban a inconsistencias y a una carga de trabajo alta en su mantenimiento.
 
 Es un framework de Código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como, extensiones de JavaScript opcionales adicionales.
 
@@ -921,8 +922,11 @@ Al pulsar ``Send'' mandará la información, y en Background empezará a analizar e
 
 % Las siguientes dos instrucciones es todo lo que necesitas
 % para incluir las citas en la memoria
-\bibliographystyle{abbrv}
-\bibliography{memoria}  % mArgumento para crear un "pull request"emoria.bib es el nombre del fichero que contiene
+\bibliographystyle{unsrt}
+\bibliography{memoria} 
+\newpage \thispagestyle{empty} \cleardoublepage
+\nocite{*}
+ % mArgumento para crear un "pull request"emoria.bib es el nombre del fichero que contiene
 % las referencias bibliográficas. Abre ese fichero y mira el formato que tiene,
 % que se conoce como BibTeX. Hay muchos sitios que exportan referencias en
 % formato BibTeX. Prueba a buscar en http://scholar.google.com por referencias
