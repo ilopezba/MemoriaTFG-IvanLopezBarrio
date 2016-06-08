@@ -503,6 +503,19 @@ En la siguiente imagen, de elaboración propia, están las tecnologías principales
 
 El navegador es alimentado por el servidor pythonanywhere. Y dentro de pythonanywhere es donde tenemos nuestros ficheros de configuración de Django, con los archivos explicados en el capitulo 3. También, se alojan en pythonanywhere, los archivos HTML, CSS3, y JS que necesita Django.
 
+\section{Base de datos SQLite3: } 
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{img/tablasBBDD.png} 
+\caption{Diagrama con las tablas de la Base de Datos}
+\end{figure}
+\begin{itemize}
+\item \textbf{HistoricoRepo: }En esta tabla guardamos todos los nombres de repositorios que hemos analizado anteriormente, y después hacemos una consulta para poder añadirlos en la columna "historial" del HTML.
+\item \textbf{Historial: } Este objeto lo utilizamos para guardar toda la información que mostramos al usuario cuando consulta un análisis. Para que de esta forma sea rápido mostrar sus resultados.
+\item \textbf{Analisis: } En este objeto guardamos la información de los errores de un repositorio completo. Sumando los errores de cada archivo, al tipo de error correspondiente. Así podemos analizar los datos rápidamente.
+
+\end{itemize}
 
 \section{Instalaciones necesarias: } 
 Todo lo instalado ha sido sobre una distribución de Linux, en mi caso, Ubuntu 15.10.
@@ -562,7 +575,7 @@ Es en el archivo views.py, donde vamos a escribir el código que deseamos que se 
 \subsection{Esquema del funcionamiento de la aplicación}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=1]{img/DiagramaFlujoTFG1.jpg} 
+\includegraphics[scale=0.9]{img/DiagramaFlujoTFG1.png} 
 \caption{Diagrama de flujo del funcionamiento de la aplicación}
 \end{figure}
 
