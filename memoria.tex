@@ -3,17 +3,17 @@
 %%
 %% Por Gregorio Robles <grex arroba gsyc.urjc.es>
 %%     Grupo de Sistemas y Comunicaciones
-%%     Escuela TÈcnica Superior de Ingenieros de TelecomunicaciÛn
+%%     Escuela T√©cnica Superior de Ingenieros de Telecomunicaci√≥n
 %%     Universidad Rey Juan Carlos
 %% (muchas ideas tomadas de Internet, colegas del GSyC, antiguos alumnos...
 %%  etc. Muchas gracias a todos)
 %%
-%% La ˙ltima versiÛn de esta plantilla est· siempre disponible en:
+%% La √∫ltima versi√≥n de esta plantilla est√° siempre disponible en:
 %%     https://github.com/gregoriorobles/plantilla-memoria
 %%
 %% Para obtener PDF, ejecuta en la shell:
 %%   make
-%% (las im·genes deben ir en PNG o JPG)
+%% (las im√°genes deben ir en PNG o JPG)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -23,12 +23,12 @@
 \usepackage[a4paper, left=2.5cm, right=2.5cm, top=3cm, bottom=3cm]{geometry}
 \usepackage{times}
 \usepackage[latin1]{inputenc}
-\usepackage[spanish]{babel} % Comenta esta lÌnea si tu memoria es en inglÈs
+\usepackage[spanish]{babel} % Comenta esta l√≠nea si tu memoria es en ingl√©s
 \usepackage{url}
 %\usepackage[dvipdfm]{graphicx}
 \usepackage{graphicx}
 \usepackage{float}  %% H para posicionar figuras
-\usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de Ìndice
+\usepackage[nottoc, notlot, notlof, notindex]{tocbibind} %% Opciones de √≠ndice
 \usepackage{latexsym}  %% Logo LaTeX
 \usepackage{subfig}
 \title{Memoria del Proyecto}
@@ -40,8 +40,8 @@
 
 \begin{document}
 
-\renewcommand{\refname}{BibliografÌa}  %% Renombrando
-\renewcommand{\appendixname}{ApÈndice}
+\renewcommand{\refname}{Bibliograf√≠a}  %% Renombrando
+\renewcommand{\appendixname}{Ap√©ndice}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PORTADA
@@ -63,12 +63,12 @@
 \vspace{3cm}
 
 \Large
-GRADO EN INGENIERÕA DE TELEM¡TICA
+GRADO EN INGENIER√çA DE TELEM√ÅTICA
 
 \vspace{0.4cm}
 
 \large
-Curso AcadÈmico 2015/2016
+Curso Acad√©mico 2015/2016
 
 \vspace{0.8cm}
 
@@ -79,11 +79,11 @@ Trabajo Fin de Grado
 \LARGE
 BESTFORK\\
 \small
-APLICACI”N WEB DE ANALISIS DE REPOSITORIOS GITHUB CON C”DIGO PYTHON
+APLICACI√ìN WEB DE ANALISIS DE REPOSITORIOS GITHUB CON C√ìDIGO PYTHON
 \vspace{4cm}
 
 \large
-Autor : Iv·n LÛpez Barrio \\
+Autor : Iv√°n L√≥pez Barrio \\
 Tutor : Dr. Gregorio Robles
 \end{center}
 \end{titlepage}
@@ -110,13 +110,13 @@ Bestfork
 
 \vspace{1cm}
 \large
-\textbf{Autor :} Iv·n LÛpez Barrio\\
-\textbf{Tutor :} Dr. Gregorio Robles MartÌnez
+\textbf{Autor :} Iv√°n L√≥pez Barrio\\
+\textbf{Tutor :} Dr. Gregorio Robles Mart√≠nez
 
 \end{center}
 
 \vspace{1cm}
-La defensa del presente Proyecto Fin de Carrera se realizÛ el dÌa \qquad$\;\,$ de \qquad\qquad\qquad\qquad \newline de 2016, siendo calificada por el siguiente tribunal:
+La defensa del presente Proyecto Fin de Carrera se realiz√≥ el d√≠a \qquad$\;\,$ de \qquad\qquad\qquad\qquad \newline de 2016, siendo calificada por el siguiente tribunal:
 
 
 \vspace{0.5cm}
@@ -130,10 +130,10 @@ La defensa del presente Proyecto Fin de Carrera se realizÛ el dÌa \qquad$\;\,$ d
 
 
 \vspace{1.2cm}
-y habiendo obtenido la siguiente calificaciÛn:
+y habiendo obtenido la siguiente calificaci√≥n:
 
 \vspace{1cm}
-\textbf{CalificaciÛn:}
+\textbf{Calificaci√≥n:}
 
 
 \vspace{1cm}
@@ -148,7 +148,7 @@ Fuenlabrada, a \qquad$\;\,$ de \qquad\qquad\qquad\qquad de 2016
 \pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
 \begin{flushright}
 \textit{Dedicado a \\
-mis padres MartÌn, Rosalia y a mi hermana Leticia.\\
+mis padres Mart√≠n, Rosalia y a mi hermana Leticia.\\
 Os quiero.}
 \end{flushright}
 
@@ -156,35 +156,35 @@ Os quiero.}
 %%%% Agradecimientos
 
 \chapter*{Agradecimientos}
-%\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el Ìndice
+%\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el √≠ndice
 \markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
 
-Quiero dar las gracias a mis padres, MartÌn y RosalÌa. Por haber sido una motivaciÛn diaria para no rendirme y trabajar por lo que querÌa. Respetando siempre todas mis decisiones y confiando en mi. Estoy seguro de que sin ellos nada de esto hubiera sido posible  \\
-Por supuesto, dar las gracias a mis amigos Yeray, Sergio, Alex, Justo, Helios, Arancha, Laura, Sandra, Estefania y Alberto, que en todos estos aÒos me han sacado un montÛn de sonrisas.\\
-No puedo olvidarme de Adrian y Kevin, con los que he compartido toda mi vida universitaria, pasando muchas horas juntos en los laboratorios y en la biblioteca, con muchos agobios, pero sabiendo que cualquier problema lo sacarÌamos adelante.\\
-Y menciÛn especial a mi hermana Leticia, que se que siempre ha confiado en mi, que ha creido en mi incluso cuando ni siquiera yo creÌa, y que aunque ella no lo sabe, soy su mayor admirador. Te quiero.\\
+Quiero dar las gracias a mis padres, Mart√≠n y Rosal√≠a. Por haber sido una motivaci√≥n diaria para no rendirme y trabajar por lo que quer√≠a. Respetando siempre todas mis decisiones y confiando en mi. Estoy seguro de que sin ellos nada de esto hubiera sido posible  \\
+Por supuesto, dar las gracias a mis amigos Yeray, Sergio, Alex, Justo, Helios, Arancha, Laura, Sandra, Estefania y Alberto, que en todos estos a√±os me han sacado un mont√≥n de sonrisas.\\
+No puedo olvidarme de Adrian y Kevin, con los que he compartido toda mi vida universitaria, pasando muchas horas juntos en los laboratorios y en la biblioteca, con muchos agobios, pero sabiendo que cualquier problema lo sacar√≠amos adelante.\\
+Y menci√≥n especial a mi hermana Leticia, que se que siempre ha confiado en mi, que ha creido en mi incluso cuando ni siquiera yo cre√≠a, y que aunque ella no lo sabe, soy su mayor admirador. Te quiero.\\
 
-Y muchas gracias a todos los que a lo largo de estos aÒos, me han ayudado de una forma u otra.
+Y muchas gracias a todos los que a lo largo de estos a√±os, me han ayudado de una forma u otra.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Resumen
 
 \chapter*{Resumen}
-%\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el Ìndice
+%\addcontentsline{toc}{chapter}{Resumen} % si queremos que aparezca en el √≠ndice
 \markboth{RESUMEN}{RESUMEN} % encabezado
 
-Este proyecto es una AplicaciÛn Web. La aplicaciÛn consiste en que, una vez proporcionada una URL de un repositorio GitHub por un usuario, la aplicaciÛn analizar· el cÛdigo escrito en Python del repositorio y sus Forks, otorgando una puntuaciÛn a cada uno de ellos en funciÛn de la calidad de cÛdigo escrito. Luego le devolver· al usuario una p·gina con los resultados ordenados de la mejor puntuaciÛn a la peor. Sus objetivos son: Ayudar a los desarrolladores a seleccionar de inicio el mejor cÛdigo cuando se interesen en un repositorio; como dueÒo del repositorio, saber si la gente que trabaja en tu cÛdigo est· haciendo buenas mejoras; por ˙ltimo, servir como argumento al hacer un pull request.
+Este proyecto es una Aplicaci√≥n Web. La aplicaci√≥n consiste en que, una vez proporcionada una URL de un repositorio GitHub por un usuario, la aplicaci√≥n analizar√° el c√≥digo escrito en Python del repositorio y sus Forks, otorgando una puntuaci√≥n a cada uno de ellos en funci√≥n de la calidad de c√≥digo escrito. Luego le devolver√° al usuario una p√°gina con los resultados ordenados de la mejor puntuaci√≥n a la peor. Sus objetivos son: Ayudar a los desarrolladores a seleccionar de inicio el mejor c√≥digo cuando se interesen en un repositorio; como due√±o del repositorio, saber si la gente que trabaja en tu c√≥digo est√° haciendo buenas mejoras; por √∫ltimo, servir como argumento al hacer un pull request.
 
-Para realizar esta aplicaciÛn web, hemos empleado las ˙ltimas tecnologÌas web. En la parte del Servidor hemos utilizado: Django, Python, API de GitHub, Pylint y SQLite3, y para el cliente: HTML5, JavaScript, CSS3 y Bootstrap.
+Para realizar esta aplicaci√≥n web, hemos empleado las √∫ltimas tecnolog√≠as web. En la parte del Servidor hemos utilizado: Django, Python, API de GitHub, Pylint y SQLite3, y para el cliente: HTML5, JavaScript, CSS3 y Bootstrap.
 
 El proyecto, surge por la necesidad de crear una herramienta para aprovechar mejor el potencial de GitHub.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Resumen en inglÈs
+%%%% Resumen en ingl√©s
 
 \chapter*{Summary}
-%\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el Ìndice
+%\addcontentsline{toc}{chapter}{Summary} % si queremos que aparezca en el √≠ndice
 \markboth{SUMMARY}{SUMMARY} % encabezado
 
 This project is a web application. The main objective is to analyze  Github repositories with Python code. The web aplication retrieves information about its forks and calculates the score depending on the code quality. Then it retuns a list of the forks of the repository sorted by this rating. The main objetives are: Help developers to choose the best fork to begin some project; if it is your own repository, you can know if other developers are doing a good job and, by last, it serves as an argument for a pull request.
@@ -194,20 +194,20 @@ For this project, we have used the last technologies on the server side, like as
 This project arises from the need to make an application that leverages the features of GitHub.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ÕNDICES %
+% √çNDICES %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Las buenas noticias es que los Ìndices se generan autom·ticamente.
-% Lo ˙nico que tienes que hacer es elegir cu·les quieren que se generen,
-% y comentar/descomentar esa instrucciÛn de LaTeX.
+% Las buenas noticias es que los √≠ndices se generan autom√°ticamente.
+% Lo √∫nico que tienes que hacer es elegir cu√°les quieren que se generen,
+% y comentar/descomentar esa instrucci√≥n de LaTeX.
 
-%%%% Õndice de contenidos
+%%%% √çndice de contenidos
 \tableofcontents 
-%%%% Õndice de figuras
+%%%% √çndice de figuras
 \cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
 \listoffigures % indice de figuras
-%%%% Õndice de tablas
+%%%% √çndice de tablas
 %\cleardoublepage
 %\addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
 %\listoftables % indice de tablas
@@ -215,20 +215,20 @@ This project arises from the need to make an application that leverages the feat
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% INTRODUCCI”N %
+% INTRODUCCI√ìN %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{IntroducciÛn}
+\chapter{Introducci√≥n}
 \label{sec:intro} % etiqueta para poder referenciar luego en el texto con ~\ref{sec:intro}
-\pagenumbering{arabic} % para empezar la numeraciÛn de p·gina con n˙meros
+\pagenumbering{arabic} % para empezar la numeraci√≥n de p√°gina con n√∫meros
 
-Cuando los ordenadores empezaban a hacerse presente en la sociedad, nadie podÌa imaginarse la cantidad de personas que iban a dedicar su vida a trabajar con ellos y para ellos. Con la llegada de internet al hogar, se abrÌa una puerta a mucha informaciÛn. øCÛmo ordenarla?, en el caso de la programaciÛn, hay m˙ltiples lenguajes y diferentes tipos de programaciÛn.
-La comunidad de Software libre, vio la necesidad de centralizar su trabajo y que todo el mundo tuviese acceso a esos trabajos. Es por ello que naciÛ SourceForge en el aÒo 1999. Tr·s el r·pido Èxito de SourceForge, grandes empresas como Google con ``Google Code'', o Atlassian con ``Bitbucket'' sacaron sus propios proyectos. A partir de la misma idea, en el aÒo 2008, nacio GitHub que usaba Git para gestionar los proyectos y hacerlos colaborativos.
+Cuando los ordenadores empezaban a hacerse presente en la sociedad, nadie pod√≠a imaginarse la cantidad de personas que iban a dedicar su vida a trabajar con ellos y para ellos. Con la llegada de internet al hogar, se abr√≠a una puerta a mucha informaci√≥n. ¬øC√≥mo ordenarla?, en el caso de la programaci√≥n, hay m√∫ltiples lenguajes y diferentes tipos de programaci√≥n.
+La comunidad de Software libre, vio la necesidad de centralizar su trabajo y que todo el mundo tuviese acceso a esos trabajos. Es por ello que naci√≥ SourceForge en el a√±o 1999. Tr√°s el r√°pido √©xito de SourceForge, grandes empresas como Google con ``Google Code'', o Atlassian con ``Bitbucket'' sacaron sus propios proyectos. A partir de la misma idea, en el a√±o 2008, nacio GitHub que usaba Git para gestionar los proyectos y hacerlos colaborativos.
 
-Pero hoy en dÌa, GitHub tiene m·s de 9 millones de usuarios registrados y m·s de 200 millones de visitas mensuales, evoluciona a un ritmo muy alto, integr·ndose en IDEs\footnote{IDEs, Integrated Development Environments, entornos de desarrollo integrado.} como Netbeans o Android Studio. GitHub tiene un p˙blico muy dispar, desde grandes empresas que utilizan repositorios p˙blicos o privados como puede ser Facebook\footnote{\url{https://github.com/facebook}}, pasando entidades p˙blicas, como el Ayuntamiento de Madrid\footnote{\url{https://github.com/AyuntamientoMadrid}}, hasta nuevos desarrolladores particulares. Hoy en dÌa se ha convertido en una herramienta casi imprescindible para cualquier desarrollador.
-Con tanto p˙blico, uno puede interesarse por un proyecto alojado en esta Web y por el trabajo que otros desarrolladores han realizado, pero, øcÛmo saber quÈ desarrollador es el que m·s avanzado lleva el proyecto?, o incluso, el dueÒo del repositorio principal, puede preguntarse si su proyecto es el m·s avanzado y cumple correctamente las normas de estilo.
-AquÌ entra en juego la aplicaciÛn Web ``BestFork''. A travÈs de ella, el usuario introduce la URL del repositorio que le interesa, analiza el repositorio y sus Forks,y otorga una nota (Usando PyLint) a cada uno de estos.
+Pero hoy en d√≠a, GitHub tiene m√°s de 9 millones de usuarios registrados y m√°s de 200 millones de visitas mensuales, evoluciona a un ritmo muy alto, integr√°ndose en IDEs\footnote{IDEs, Integrated Development Environments, entornos de desarrollo integrado.} como Netbeans o Android Studio. GitHub tiene un p√∫blico muy dispar, desde grandes empresas que utilizan repositorios p√∫blicos o privados como puede ser Facebook\footnote{\url{https://github.com/facebook}}, pasando entidades p√∫blicas, como el Ayuntamiento de Madrid\footnote{\url{https://github.com/AyuntamientoMadrid}}, hasta nuevos desarrolladores particulares. Hoy en d√≠a se ha convertido en una herramienta casi imprescindible para cualquier desarrollador.
+Con tanto p√∫blico, uno puede interesarse por un proyecto alojado en esta Web y por el trabajo que otros desarrolladores han realizado, pero, ¬øc√≥mo saber qu√© desarrollador es el que m√°s avanzado lleva el proyecto?, o incluso, el due√±o del repositorio principal, puede preguntarse si su proyecto es el m√°s avanzado y cumple correctamente las normas de estilo.
+Aqu√≠ entra en juego la aplicaci√≥n Web ``BestFork''. A trav√©s de ella, el usuario introduce la URL del repositorio que le interesa, analiza el repositorio y sus Forks,y otorga una nota (Usando PyLint) a cada uno de estos.
 
 
 
@@ -243,31 +243,31 @@ AquÌ entra en juego la aplicaciÛn Web ``BestFork''. A travÈs de ella, el usuario
 \label{chap:objetivos}
 
 \section{Objetivo general}
-El proyecto tiene el siguiente objetivo: crear una aplicaciÛn Web que partiendo de un repositorio GitHub lo analice, incluyendo a sus Forks, otorgando una puntuaciÛn a cada uno de estos. Pero el fin real, es crear una aplicaciÛn ˙til para desarrolladores. 
+El proyecto tiene el siguiente objetivo: crear una aplicaci√≥n Web que partiendo de un repositorio GitHub lo analice, incluyendo a sus Forks, otorgando una puntuaci√≥n a cada uno de estos. Pero el fin real, es crear una aplicaci√≥n √∫til para desarrolladores. 
 
-\section{Objetivos especÌficos}
+\section{Objetivos espec√≠ficos}
 \begin{itemize}
-\item\textbf{Apoyar a nuevos desarrolladores:} Una persona interesada en cierto proyecto GitHub, puede usar la herramienta para ver que Forks est·n m·s avanzados y asÌ ahorrar tiempo en analizar todos los Forks que tiene el repositorio principal por el que se ha interesado. 
+\item\textbf{Apoyar a nuevos desarrolladores:} Una persona interesada en cierto proyecto GitHub, puede usar la herramienta para ver que Forks est√°n m√°s avanzados y as√≠ ahorrar tiempo en analizar todos los Forks que tiene el repositorio principal por el que se ha interesado. 
 
-\item\textbf{Servir como argumento para crear un ``pull request'':} Un desarrollador, puede usar la aplicaciÛn para ver si realmente ofrece alguna mejora respecto a la rama principal. En caso afirmativo, podr· aÒadir la URL de la aplicaciÛn en la descripciÛn del pull request, para garantizar que, al menos, no tiene grandes errores.
+\item\textbf{Servir como argumento para crear un ``pull request'':} Un desarrollador, puede usar la aplicaci√≥n para ver si realmente ofrece alguna mejora respecto a la rama principal. En caso afirmativo, podr√° a√±adir la URL de la aplicaci√≥n en la descripci√≥n del pull request, para garantizar que, al menos, no tiene grandes errores.
 
-\item\textbf{Controlar repositorios propios:} El dueÒo del repositorio puede utilizar la aplicaciÛn para ver si la gente que trabaja en su cÛdigo esta haciendo buenas mejoras, y en caso de que estÈ sucediendo, aÒadirlas para mantener la rama principal lo m·s actualizada posible.
+\item\textbf{Controlar repositorios propios:} El due√±o del repositorio puede utilizar la aplicaci√≥n para ver si la gente que trabaja en su c√≥digo esta haciendo buenas mejoras, y en caso de que est√© sucediendo, a√±adirlas para mantener la rama principal lo m√°s actualizada posible.
 \end{itemize}
 
-\section{PlanificaciÛn temporal}
+\section{Planificaci√≥n temporal}
 \label{sec:planificacion-temporal}
-El orden y la planificaciÛn cronolÛgica al hacer el proyecto fue:
+El orden y la planificaci√≥n cronol√≥gica al hacer el proyecto fue:
 
 \begin{enumerate}
-\item ReuniÛn con Gregorio para confirmar el proyecto seleccionado. En esa misma reuniÛn, me informÛ de las tecnologÌas principales que Ìbamos a utilizar.
-\item Me empiezo a documentar sobre las tecnologÌas que nunca habÌa utilizado.
+\item Reuni√≥n con Gregorio para confirmar el proyecto seleccionado. En esa misma reuni√≥n, me inform√≥ de las tecnolog√≠as principales que √≠bamos a utilizar.
+\item Me empiezo a documentar sobre las tecnolog√≠as que nunca hab√≠a utilizado.
 \item Realizo la funcionalidad principal con filtros, y reviso que calcule las puntuaciones correctamente.
-\item AÒado la funciÛn para que el usuario reciba un email cuando los resultados estÈn listos. TambiÈn aÒado Javascript para evitar rutas que no sean de Github y que el correo electrÛnico introducido tenga un formato correcto.
-\item AÒado Historial con los ˙ltimos repositorios consultados.
-\item ReuniÛn con Gregorio, que me aporta m·s ideas sobre el proyecto, por ejemplo, no tener en cuenta los Forks que lleven mucho tiempo sin actualizarse.
-\item AÒado la nueva funciÛn para que no tenga en cuenta antiguos Forks e introduzco diseÒo de la mano de Bootstrap.
-\item Subir aplicaciÛn a pythonanywhere.com para que pueda utilizarse realmente.
-\item Realizo una mejora, aÒadiendo el an·lisis en background, pero no es posible implementarla en pythonanywhere.com por tener threads deshabilitados.
+\item A√±ado la funci√≥n para que el usuario reciba un email cuando los resultados est√©n listos. Tambi√©n a√±ado Javascript para evitar rutas que no sean de Github y que el correo electr√≥nico introducido tenga un formato correcto.
+\item A√±ado Historial con los √∫ltimos repositorios consultados.
+\item Reuni√≥n con Gregorio, que me aporta m√°s ideas sobre el proyecto, por ejemplo, no tener en cuenta los Forks que lleven mucho tiempo sin actualizarse.
+\item A√±ado la nueva funci√≥n para que no tenga en cuenta antiguos Forks e introduzco dise√±o de la mano de Bootstrap.
+\item Subir aplicaci√≥n a pythonanywhere.com para que pueda utilizarse realmente.
+\item Realizo una mejora, a√±adiendo el an√°lisis en background, pero no es posible implementarla en pythonanywhere.com por tener threads deshabilitados.
 \end{enumerate}
 
 
@@ -279,12 +279,12 @@ El orden y la planificaciÛn cronolÛgica al hacer el proyecto fue:
 \cleardoublepage
 \chapter{Estado del arte}
 
-Este proyecto es una aplicaciÛn Web que facilita el an·lisis de repositorios de GitHub y sus respectivos Forks. 
-Actualmente sÛlo analiza repositorios que tengan su cÛdigo escrito en python.
+Este proyecto es una aplicaci√≥n Web que facilita el an√°lisis de repositorios de GitHub y sus respectivos Forks. 
+Actualmente s√≥lo analiza repositorios que tengan su c√≥digo escrito en python.
 Consta de la parte de Servidor, y la parte de cliente.
 
 
-\section{TecnologÌas Servidor} 
+\section{Tecnolog√≠as Servidor} 
 \label{sec:seccion1}
 \subsection{Django}
 
@@ -292,20 +292,20 @@ Consta de la parte de Servidor, y la parte de cliente.
 \centering
 \includegraphics[scale=0.1]{img/django-logo-negative.png}
 \end{figure}  
-Django es un framework de desarrollo web de cÛdigo abierto, escrito en python, que respeta el patrÛn de diseÒo conocido como \textbf{Modelo - Vista - Controlador}. En su origen, fue desarrollado para gestionar p·ginas orientadas a noticias, pero en julio fue liberada al p˙blico bajo una licencia BSD en el aÒo 2005.
-Su principal meta es facilitar la creaciÛn de sitios web complejos, siguiendo el principio DRY, ``Don't Repeat Youself''. \\
-\textbf{CaracterÌsticas principales:}
+Django es un framework de desarrollo web de c√≥digo abierto, escrito en python, que respeta el patr√≥n de dise√±o conocido como \textbf{Modelo - Vista - Controlador}. En su origen, fue desarrollado para gestionar p√°ginas orientadas a noticias, pero en julio fue liberada al p√∫blico bajo una licencia BSD en el a√±o 2005.
+Su principal meta es facilitar la creaci√≥n de sitios web complejos, siguiendo el principio DRY, ``Don't Repeat Youself''. \\
+\textbf{Caracter√≠sticas principales:}
 \begin{itemize}
-\item ProtecciÛn CSRF seg˙n el documento TÈcnico RFC2616.
+\item Protecci√≥n CSRF seg√∫n el documento T√©cnico RFC2616.
 \item Activa comunidad de desarrollo.
-\item DocumentaciÛn muy completa.
+\item Documentaci√≥n muy completa.
 \item Sistema de plantillas basado en etiquetas, con herencia.
-\item Interfaz de administraciÛn autom·tica.
-\item DiseÒo de URLs sin limitaciones del framework.
+\item Interfaz de administraci√≥n autom√°tica.
+\item Dise√±o de URLs sin limitaciones del framework.
 \item Shell interactiva para trabajar con el ORM.
 \end{itemize}
  
-Django, est· fuertemente inspirado en la filosofÌa \textbf{Modelo - Vista - Controlador}, aunque con matices. Lo que en un verdadero modelo MVC se llamarÌa ``controlador'' en Django se llama vista, y lo que se llamarÌa ``vista'' aquÌ son plantillas. 
+Django, est√° fuertemente inspirado en la filosof√≠a \textbf{Modelo - Vista - Controlador}, aunque con matices. Lo que en un verdadero modelo MVC se llamar√≠a ``controlador'' en Django se llama vista, y lo que se llamar√≠a ``vista'' aqu√≠ son plantillas. 
 
 \begin{figure}[hbtp]
 \caption{Esquema Django}
@@ -317,26 +317,26 @@ Django, est· fuertemente inspirado en la filosofÌa \textbf{Modelo - Vista - Cont
 \ La arquitectura se divide en cinco bloques:
 
 \begin{itemize}
-\item\textbf{settings.py: }aquÌ se encuentran todas las configuraciones que podemos agregar o modificar para nuestro proyecto, aplicaciones instaladas, Base de datos que va a ser utilizada, directorio de plantillas...
-\item\textbf{manage.py }Es un archivo generado autom·ticamente que sirve para interactuar desde la consola con el proyecto, usando los comandos que podemos ver en la documentaciÛn\footnote{\url{https://docs.djangoproject.com/es/1.9/ref/django-admin/}}.
-\item\textbf{models.py: }Cada aplicaciÛn que se crea tiene su propio models.py. Aunque es posible utilizar Django sin una base de datos, Django cuenta con este mapeador Objeto-Relacional en el que es posible definir la estructura de la Base de datos utilizando cÛdigo Python. En Django anterior a la versiÛn 1.9, utilizando el comando syncdb se aplicaba la sentencia ``CREATE TABLE'' autom·ticamente, verificando si las tablas ya existÌan, y cre·ndolas en caso negativo. En la ˙ltima versiÛn de Django (1.9) se debe ejecutar el comando ``makemigrations'' y posteriormente ``migrate''.
-\item\textbf{views.py: }Archivo que contiene el cÛdigo que se ejecuta cuando es llamado por una URL. Esta llamada ejecuta la funciÛn en el servidor, para preparar la respuesta al cliente en forma de respuesta HTML, template, JSON...  
+\item\textbf{settings.py: }aqu√≠ se encuentran todas las configuraciones que podemos agregar o modificar para nuestro proyecto, aplicaciones instaladas, Base de datos que va a ser utilizada, directorio de plantillas...
+\item\textbf{manage.py }Es un archivo generado autom√°ticamente que sirve para interactuar desde la consola con el proyecto, usando los comandos que podemos ver en la documentaci√≥n\footnote{\url{https://docs.djangoproject.com/es/1.9/ref/django-admin/}}.
+\item\textbf{models.py: }Cada aplicaci√≥n que se crea tiene su propio models.py. Aunque es posible utilizar Django sin una base de datos, Django cuenta con este mapeador Objeto-Relacional en el que es posible definir la estructura de la Base de datos utilizando c√≥digo Python. En Django anterior a la versi√≥n 1.9, utilizando el comando syncdb se aplicaba la sentencia ``CREATE TABLE'' autom√°ticamente, verificando si las tablas ya exist√≠an, y cre√°ndolas en caso negativo. En la √∫ltima versi√≥n de Django (1.9) se debe ejecutar el comando ``makemigrations'' y posteriormente ``migrate''.
+\item\textbf{views.py: }Archivo que contiene el c√≥digo que se ejecuta cuando es llamado por una URL. Esta llamada ejecuta la funci√≥n en el servidor, para preparar la respuesta al cliente en forma de respuesta HTML, template, JSON...  
 \item\textbf{urls.py: }Es el archivo que relaciona las URLs del proyecto creado, con las funciones creadas en el archivo ``views.py''. Utiliza expresiones regulares.
 
 \end{itemize}
 
-La salud actual y futura de Django es muy buena, pues ahora est· siendo utilizado en aplicaciones tan de moda como son Disqus, Instagram o Pinterest, adem·s de usarse ya en sitios m·s consolidados como son Mozilla y OpenStack.\\
+La salud actual y futura de Django es muy buena, pues ahora est√° siendo utilizado en aplicaciones tan de moda como son Disqus, Instagram o Pinterest, adem√°s de usarse ya en sitios m√°s consolidados como son Mozilla y OpenStack.\\
 
 \subsection{Python} 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.1]{img/Python-logo.png} 
 \end{figure}
-Python es un lenguaje de programaciÛn de muy alto nivel, multiparadigma, con el que se puede desarrollar cualquier programa, desde programas para servidores, hasta p·ginas web. Es un lenguaje interpretado. Este tipo de lenguajes tienen la ventaja de ser independientes de la m·quina y del sistema operativo que los ejecute, puesto que no tiene instrucciones propias del procesador. No tiene que compilarse, por lo que resulta m·s r·pido para desarrollarlo y resolver inconvenientes, por contra, su principal desventaja es la velocidad, es algo que debemos tener muy en cuenta a la hora de seleccionar el lenguaje que vamos a utilizar (En nuestro caso, la velocidad de la aplicaciÛn no es algo determinante).
-DecÌamos al principio que es un lenguaje multiparadigma, debido a que soporta programaciÛn imperativa, programaciÛn funcional, y como no, orientaciÛn a objetos. Esto ofrece mucha libertad a los programadores.
-Tiene una sintaxis limpia y hace que sea f·cilmente legible. En los ˙ltimos aÒos se ha popularizado por las siguientes razones:
+Python es un lenguaje de programaci√≥n de muy alto nivel, multiparadigma, con el que se puede desarrollar cualquier programa, desde programas para servidores, hasta p√°ginas web. Es un lenguaje interpretado. Este tipo de lenguajes tienen la ventaja de ser independientes de la m√°quina y del sistema operativo que los ejecute, puesto que no tiene instrucciones propias del procesador. No tiene que compilarse, por lo que resulta m√°s r√°pido para desarrollarlo y resolver inconvenientes, por contra, su principal desventaja es la velocidad, es algo que debemos tener muy en cuenta a la hora de seleccionar el lenguaje que vamos a utilizar (En nuestro caso, la velocidad de la aplicaci√≥n no es algo determinante).
+Dec√≠amos al principio que es un lenguaje multiparadigma, debido a que soporta programaci√≥n imperativa, programaci√≥n funcional, y como no, orientaci√≥n a objetos. Esto ofrece mucha libertad a los programadores.
+Tiene una sintaxis limpia y hace que sea f√°cilmente legible. En los √∫ltimos a√±os se ha popularizado por las siguientes razones:
 \begin{itemize}
-\item Ofrece gran cantidad de librerÌas que contienen tipos de datos, y funciones incorporadas en el lenguaje que favorecen la realizaciÛn de muchas tareas sin necesidad de empezar de cero.
+\item Ofrece gran cantidad de librer√≠as que contienen tipos de datos, y funciones incorporadas en el lenguaje que favorecen la realizaci√≥n de muchas tareas sin necesidad de empezar de cero.
 \item Sencillez y velocidad al crear programas. Por norma, los programas en python tienen menos lineas que sus equivalentes en C o Java.
 \item Cantidad de plataformas en las que se puede desarrollar, Windows, Mac, Unix...
 \item Se puede obtener de manera gratuita  y se puede utilizar con fines comerciales.
@@ -351,7 +351,7 @@ Es un lenguaje apropiado para empezar a en el mundo del desarrollador, pese a qu
 \end{figure}
 
 GitHub es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
-En este proyecto, he utilizado la API (Application Programming Interfaces) de GitHub para conocer los Forks que tenÌa un repositorio y tambiÈn para conocer la fecha de la ˙ltima actualizaciÛn.
+En este proyecto, he utilizado la API (Application Programming Interfaces) de GitHub para conocer los Forks que ten√≠a un repositorio y tambi√©n para conocer la fecha de la √∫ltima actualizaci√≥n.
 \begin{lstlisting}[frame=single]
 GET /repos/:owner/:repo/forks
 \end{lstlisting}
@@ -359,25 +359,25 @@ GET /repos/:owner/:repo/forks
 
 \subsection{Pylint}
 
-Pylint es un programa de cÛdigo abierto\footnote{\url{https://github.com/PyCQA/pylint}} que analiza cÛdigo Python. Nos ofrece informaciÛn sobre cÛmo est· escrito el cÛdigo analizado, seg˙n las normas de estilo PEP-8, y clasifica los errores en 5 tipos, a saber:
+Pylint es un programa de c√≥digo abierto\footnote{\url{https://github.com/PyCQA/pylint}} que analiza c√≥digo Python. Nos ofrece informaci√≥n sobre c√≥mo est√° escrito el c√≥digo analizado, seg√∫n las normas de estilo PEP-8, y clasifica los errores en 5 tipos, a saber:
 \begin{itemize}
-\item RefactorizaciÛn: Asociado a alguna violaciÛn en alguna buena pr·ctica.
-\item ConvenciÛn: Asociado a una violaciÛn del est·ndar de codificaciÛn.
-\item Advertencia: Asociado a problemas de estilo o errores menores en la programaciÛn.
-\item Error: Son errores importantes en el cÛdigo, que deben revisarse.
-\item Fatal: Si se produce este error, Pylint no pudo terminar el an·lisis.
+\item Refactorizaci√≥n: Asociado a alguna violaci√≥n en alguna buena pr√°ctica.
+\item Convenci√≥n: Asociado a una violaci√≥n del est√°ndar de codificaci√≥n.
+\item Advertencia: Asociado a problemas de estilo o errores menores en la programaci√≥n.
+\item Error: Son errores importantes en el c√≥digo, que deben revisarse.
+\item Fatal: Si se produce este error, Pylint no pudo terminar el an√°lisis.
 \end{itemize}
-Pylint es una herramienta que todo programador de python debe considerar para tener un cÛdigo de buena calidad. Ya que pylint revisa:
+Pylint es una herramienta que todo programador de python debe considerar para tener un c√≥digo de buena calidad. Ya que pylint revisa:
 \begin{itemize}
 \item Presencia de Docstring.
-\item Nombres de mÛdulos, clases, funciones, mÈtodos, variables...
+\item Nombres de m√≥dulos, clases, funciones, m√©todos, variables...
 \item Uso de declaraciones globales
-\item RedefiniciÛn de funciones, mÈtodos...
-\item RevisiÛn de si las variables son usadas o no
-\item RevisiÛn de diseÒo, e imports
+\item Redefinici√≥n de funciones, m√©todos...
+\item Revisi√≥n de si las variables son usadas o no
+\item Revisi√≥n de dise√±o, e imports
 \end{itemize}
 Como Pylint es totalmente configurable, se pueden filtrar errores que no queremos que tenga en cuenta.
-Al final del an·lisis, Pylint nos ofrece una puntuaciÛn de dicho cÛdigo.
+Al final del an√°lisis, Pylint nos ofrece una puntuaci√≥n de dicho c√≥digo.
 
 \subsection{SQLite3}
 \begin{figure}[hbtp]
@@ -385,33 +385,33 @@ Al final del an·lisis, Pylint nos ofrece una puntuaciÛn de dicho cÛdigo.
 \includegraphics[scale=0.8]{img/sqlite3.jpg} 
 \end{figure}
 
-SQLite es un sistema de gestiÛn de Bases de datos relacional, compatible con ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad), escrita en C. Es de dominio p˙blico. \\
-A diferencia de los sistema de gestiÛn de bases de datos cliente-servidor, el motor de SQLite no es un proceso independiente con el que el programa principal se comunica. En lugar de eso, la biblioteca SQLite se enlaza con el programa, pasando a ser parte integral del mismo. El programa utiliza la funcionalidad de SQLite a travÈs de llamadas simples a subrutinas y funciones. Esto reduce la latencia en el acceso a la base de datos, debido a que las llamadas a funciones son m·s eficientes que la comunicaciÛn entre procesos. El conjunto de la base de datos (definiciones, tablas, Ìndices, y los propios datos), son guardados como un ˙nico fichero est·ndar en la m·quina host. Este diseÒo simple se logra bloqueando todo el fichero de base de datos al principio de cada transacciÛn.
+SQLite es un sistema de gesti√≥n de Bases de datos relacional, compatible con ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad), escrita en C. Es de dominio p√∫blico. \\
+A diferencia de los sistema de gesti√≥n de bases de datos cliente-servidor, el motor de SQLite no es un proceso independiente con el que el programa principal se comunica. En lugar de eso, la biblioteca SQLite se enlaza con el programa, pasando a ser parte integral del mismo. El programa utiliza la funcionalidad de SQLite a trav√©s de llamadas simples a subrutinas y funciones. Esto reduce la latencia en el acceso a la base de datos, debido a que las llamadas a funciones son m√°s eficientes que la comunicaci√≥n entre procesos. El conjunto de la base de datos (definiciones, tablas, √≠ndices, y los propios datos), son guardados como un √∫nico fichero est√°ndar en la m√°quina host. Este dise√±o simple se logra bloqueando todo el fichero de base de datos al principio de cada transacci√≥n.
 
-En su versiÛn 3, SQLite permite bases de datos de hasta 2 Terabytes de tamaÒo, y tambiÈn permite la inclusiÛn de campos tipo BLOB (Binary large object).
+En su versi√≥n 3, SQLite permite bases de datos de hasta 2 Terabytes de tama√±o, y tambi√©n permite la inclusi√≥n de campos tipo BLOB (Binary large object).
 
-\section{TecnologÌas Cliente} 
+\section{Tecnolog√≠as Cliente} 
 \label{sec:seccion2}
 \subsection{HTML5} 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.3]{img/HTML5.png} 
 \end{figure}
-Es la ˙ltima versiÛn de HTML (HyperText Markup Language). El tÈrmino representa dos conceptos diferentes:
+Es la √∫ltima versi√≥n de HTML (HyperText Markup Language). El t√©rmino representa dos conceptos diferentes:
 \begin{itemize}
-\item Se trata de una nueva versiÛn de HTML, con nuevos atributos, elementos y comportamientos.
-\item Cuenta con m·s tecnologÌas que permiten a las aplicaciones Web y sitios Web, ser m·s diversos. A este conjunto se le llama ``HTML5 y amigos'', comunmente HTML5.
+\item Se trata de una nueva versi√≥n de HTML, con nuevos atributos, elementos y comportamientos.
+\item Cuenta con m√°s tecnolog√≠as que permiten a las aplicaciones Web y sitios Web, ser m√°s diversos. A este conjunto se le llama ``HTML5 y amigos'', comunmente HTML5.
 \end{itemize}
 
-Esta es la primera vez que se desarrollan en paralelo HTML y XHTML. La versiÛn definitiva se publicÛ en Octubre de 2014. Las tecnologÌas de HTML5, se clasifican en varios grupos seg˙n su funciÛn:
+Esta es la primera vez que se desarrollan en paralelo HTML y XHTML. La versi√≥n definitiva se public√≥ en Octubre de 2014. Las tecnolog√≠as de HTML5, se clasifican en varios grupos seg√∫n su funci√≥n:
 \begin{itemize}
-\item \textbf{Sem·ntica: }Describe con m·s precisiÛn cual es su contenido, aÒadiendo nuevas etiquetas.
+\item \textbf{Sem√°ntica: }Describe con m√°s precisi√≥n cual es su contenido, a√±adiendo nuevas etiquetas.
 \item \textbf{Conectividad: }Permite comunicaciones con el servidor usando: Web Sockets, Eventos de servidor enviados, WebRTC.
-\item \textbf{Sin ConexiÛn y almacenamiento: }Permite a las p·ginas web almacenar datos localmente en el lado del cliente y operar sin conexiÛn de manera m·s eficiente
-\item \textbf{Multimedia: } Ofrece un excelente soporte para utilizar contenido multimedia, como son audio y vÌdeo nativamente.
-\item \textbf{Rendimiento e integraciÛn: }Proporciona una optimizaciÛn de la velocidad y un mejor uso del hardware
-\item \textbf{Acceso al dispositivo: }Proporciona APIs para el uso de varios componentes internos de entrada y salida de nuestro dispositivo (c·mara, micrÛfono, geolocalizaciÛn...)
-\item \textbf{CSS3: }Nueva variedad de opciones para diseÒos m·s complejos.
+\item \textbf{Sin Conexi√≥n y almacenamiento: }Permite a las p√°ginas web almacenar datos localmente en el lado del cliente y operar sin conexi√≥n de manera m√°s eficiente
+\item \textbf{Multimedia: } Ofrece un excelente soporte para utilizar contenido multimedia, como son audio y v√≠deo nativamente.
+\item \textbf{Rendimiento e integraci√≥n: }Proporciona una optimizaci√≥n de la velocidad y un mejor uso del hardware
+\item \textbf{Acceso al dispositivo: }Proporciona APIs para el uso de varios componentes internos de entrada y salida de nuestro dispositivo (c√°mara, micr√≥fono, geolocalizaci√≥n...)
+\item \textbf{CSS3: }Nueva variedad de opciones para dise√±os m√°s complejos.
 \end{itemize}
 
 \subsection{JavaScript}
@@ -419,29 +419,29 @@ Esta es la primera vez que se desarrollan en paralelo HTML y XHTML. La versiÛn d
 \centering
 \includegraphics[scale=0.85]{img/js.png} 
 \end{figure}
-A principios de los aÒos 90, la mayorÌa de usuarios que se conectaban a Internet lo hacÌan con mÛdems a una velocidad m·xima de 28.8 kbps. En esa Època, empezaban a desarrollarse las primeras aplicaciones web y por tanto, las p·ginas web comenzaban a incluir formularios complejos.
+A principios de los a√±os 90, la mayor√≠a de usuarios que se conectaban a Internet lo hac√≠an con m√≥dems a una velocidad m√°xima de 28.8 kbps. En esa √©poca, empezaban a desarrollarse las primeras aplicaciones web y por tanto, las p√°ginas web comenzaban a incluir formularios complejos.
 
-Con unas aplicaciones web cada vez m·s complejas y una velocidad de navegaciÛn tan lenta, surgiÛ la necesidad de un lenguaje de programaciÛn que se ejecutara en el navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un formulario, no se le hacÌa esperar mucho tiempo hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.
+Con unas aplicaciones web cada vez m√°s complejas y una velocidad de navegaci√≥n tan lenta, surgi√≥ la necesidad de un lenguaje de programaci√≥n que se ejecutara en el navegador del usuario. De esta forma, si el usuario no rellenaba correctamente un formulario, no se le hac√≠a esperar mucho tiempo hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.
 
-JavaScript es un lenguaje de programaciÛn que se utiliza principalmente para crear p·ginas web din·micas.
+JavaScript es un lenguaje de programaci√≥n que se utiliza principalmente para crear p√°ginas web din√°micas.
 
-Una p·gina web din·mica es aquella que incorpora efectos como texto que aparece y desaparece, animaciones, acciones que se activan al pulsar botones y ventanas con mensajes de aviso al usuario.
+Una p√°gina web din√°mica es aquella que incorpora efectos como texto que aparece y desaparece, animaciones, acciones que se activan al pulsar botones y ventanas con mensajes de aviso al usuario.
 
-TÈcnicamente, JavaScript es un lenguaje de programaciÛn interpretado, por lo que no es necesario compilar los programas para ejecutarlos. En otras palabras, los programas escritos con JavaScript se pueden probar directamente en cualquier navegador sin necesidad de procesos intermedios.
+T√©cnicamente, JavaScript es un lenguaje de programaci√≥n interpretado, por lo que no es necesario compilar los programas para ejecutarlos. En otras palabras, los programas escritos con JavaScript se pueden probar directamente en cualquier navegador sin necesidad de procesos intermedios.
 
-A pesar de su nombre, JavaScript no guarda ninguna relaciÛn directa con el lenguaje de programaciÛn Java. Legalmente, JavaScript es una marca registrada de la empresa Sun Microsystems.
+A pesar de su nombre, JavaScript no guarda ninguna relaci√≥n directa con el lenguaje de programaci√≥n Java. Legalmente, JavaScript es una marca registrada de la empresa Sun Microsystems.
 
 Las \textbf{ventajas }que tiene JavaScript son:
 \begin{itemize}
-\item Excelente soluciÛn para poner en pr·ctica la validaciÛn de datos de un formulario en el lado del cliente. Si un usuario omite escribir su nombre en un formulario, una funciÛn de validaciÛn en JavaScript puede desplegar en pantalla un mensaje popup para hacerle saber al usuario acerca de la omisiÛn.
+\item Excelente soluci√≥n para poner en pr√°ctica la validaci√≥n de datos de un formulario en el lado del cliente. Si un usuario omite escribir su nombre en un formulario, una funci√≥n de validaci√≥n en JavaScript puede desplegar en pantalla un mensaje popup para hacerle saber al usuario acerca de la omisi√≥n.
 
-\item CreaciÛn de efectos din·micos tales como im·genes din·micas y presentaciones de diapositivas, donde su uso se ha convertido algo com˙n hoy en dÌa.
+\item Creaci√≥n de efectos din√°micos tales como im√°genes din√°micas y presentaciones de diapositivas, donde su uso se ha convertido algo com√∫n hoy en d√≠a.
 \end{itemize}
 Por contra, sus \textbf{desventajas } son:
 \begin{itemize}
-\item La seguridad. Los fragmentos de cÛdigo de JavaScript son descargados y se ejecutan en el navegador del cliente, esto puede provocar que un cÛdigo malicioso pueda ser ejecutado en la m·quina del cliente con el objetivo de explotar alguna vulnerabilidad de seguridad conocida en una de las aplicaciones, navegadores o el mismo sistema operativo.
+\item La seguridad. Los fragmentos de c√≥digo de JavaScript son descargados y se ejecutan en el navegador del cliente, esto puede provocar que un c√≥digo malicioso pueda ser ejecutado en la m√°quina del cliente con el objetivo de explotar alguna vulnerabilidad de seguridad conocida en una de las aplicaciones, navegadores o el mismo sistema operativo.
 
-\item Introduce una gran cantidad de fragmentos de cÛdigo en los sitios web. El problema es sobretodo  para los motores de b˙squeda como, por ejemplo, Google. Este cÛdigo, hace que sea m·s complicado descifrar la calidad del contenido, y pueda indexarse correctamente. Por suerte, el problema de grandes fragmentos de cÛdigo JavaScript se resuelve f·cilmente mediante el almacenamiento del cÛdigo JavaScript dentro de archivos separados del cÛdigo HTML con la extensiÛn. *.Js, dejando una p·gina web mucho m·s limpia y legible de cara al desarrollador. 
+\item Introduce una gran cantidad de fragmentos de c√≥digo en los sitios web. El problema es sobretodo  para los motores de b√∫squeda como, por ejemplo, Google. Este c√≥digo, hace que sea m√°s complicado descifrar la calidad del contenido, y pueda indexarse correctamente. Por suerte, el problema de grandes fragmentos de c√≥digo JavaScript se resuelve f√°cilmente mediante el almacenamiento del c√≥digo JavaScript dentro de archivos separados del c√≥digo HTML con la extensi√≥n. *.Js, dejando una p√°gina web mucho m√°s limpia y legible de cara al desarrollador. 
 \end{itemize}
 
 \subsection{CSS3}
@@ -450,11 +450,11 @@ Por contra, sus \textbf{desventajas } son:
 \includegraphics[scale=0.35]{img/CSS3.png} 
 \end{figure}
 
-Las hojas de estilo llegaron despuÈs del lenguaje de etiquetas SGML,cerca del aÒo 1970. Desde la creaciÛn de SGML, se observÛ la necesidad de definir un mecanismo que permitiera aplicar de forma consistente diferentes estilos a los documentos electrÛnicos.
+Las hojas de estilo llegaron despu√©s del lenguaje de etiquetas SGML,cerca del a√±o 1970. Desde la creaci√≥n de SGML, se observ√≥ la necesidad de definir un mecanismo que permitiera aplicar de forma consistente diferentes estilos a los documentos electr√≥nicos.
 
-El gran impulso de los lenguajes de hojas de estilo se produjo con la llegada de Internet y el crecimiento exponencial del lenguaje HTML para la creaciÛn de documentos electrÛnicos. La guerra de navegadores y la falta de un est·ndar para la definiciÛn de los estilos dificultaban la creaciÛn de documentos con la misma apariencia en diferentes navegadores. Finalmente el organismo W3C, encargado de definir los est·ndares relacionados con la web, aceptaron una propuesta que llamaron CSS (Cascading Style Sheets).
+El gran impulso de los lenguajes de hojas de estilo se produjo con la llegada de Internet y el crecimiento exponencial del lenguaje HTML para la creaci√≥n de documentos electr√≥nicos. La guerra de navegadores y la falta de un est√°ndar para la definici√≥n de los estilos dificultaban la creaci√≥n de documentos con la misma apariencia en diferentes navegadores. Finalmente el organismo W3C, encargado de definir los est√°ndares relacionados con la web, aceptaron una propuesta que llamaron CSS (Cascading Style Sheets).
 
-En resumen, CSS3 es una tecnologÌa que nos permite crear p·ginas web de una manera m·s exacta, y podemos hacer cosas que no podrÌamos hacer sÛlo con HTML, como incluir m·rgenes, tipos de letra, fondos, colores...
+En resumen, CSS3 es una tecnolog√≠a que nos permite crear p√°ginas web de una manera m√°s exacta, y podemos hacer cosas que no podr√≠amos hacer s√≥lo con HTML, como incluir m√°rgenes, tipos de letra, fondos, colores...
 \\
 \subsection{Bootstrap}
 \begin{figure}[hbtp]
@@ -462,46 +462,46 @@ En resumen, CSS3 es una tecnologÌa que nos permite crear p·ginas web de una mane
 \includegraphics[scale=0.2]{img/bootstrap.png} 
 \end{figure}
 
-Bootstrap fue desarrollado por Mark Otto y Jacbod Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia a travÈs de herramientas internas. Antes de Bootstrap, se usaban varias librerÌas para el desarrollo de interfaces de usuario, las cuales guiaban a inconsistencias y a una carga de trabajo alta en su mantenimiento.
+Bootstrap fue desarrollado por Mark Otto y Jacbod Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia a trav√©s de herramientas internas. Antes de Bootstrap, se usaban varias librer√≠as para el desarrollo de interfaces de usuario, las cuales guiaban a inconsistencias y a una carga de trabajo alta en su mantenimiento.
 
-Es un framework de CÛdigo abierto para diseÒo de sitios y aplicaciones web. Contiene plantillas de diseÒo con tipografÌa, formularios, botones, cuadros, men˙s de navegaciÛn y otros elementos de diseÒo basado en HTML y CSS, asÌ como, extensiones de JavaScript opcionales adicionales.
+Es un framework de C√≥digo abierto para dise√±o de sitios y aplicaciones web. Contiene plantillas de dise√±o con tipograf√≠a, formularios, botones, cuadros, men√∫s de navegaci√≥n y otros elementos de dise√±o basado en HTML y CSS, as√≠ como, extensiones de JavaScript opcionales adicionales.
 
-Es uno de los proyectos m·s populares de GitHub.\footnote{\url{http://web.archive.org/web/20100419140506/http://github.com/popular/watched}} \\
- \textbf{CaracterÌsticas:} \
+Es uno de los proyectos m√°s populares de GitHub.\footnote{\url{http://web.archive.org/web/20100419140506/http://github.com/popular/watched}} \\
+ \textbf{Caracter√≠sticas:} \
 \begin{itemize}
-\item Compatible con la mayorÌa de navegadores web.
-\item DiseÒos sensibles, esto es, que el diseÒo gr·fico de la pantalla se ajusta din·micamente,tomando en cuenta las caracterÌsticas del dispositivo usado.
-\item Es de cÛdigo abierto y disponible en GitHub.
+\item Compatible con la mayor√≠a de navegadores web.
+\item Dise√±os sensibles, esto es, que el dise√±o gr√°fico de la pantalla se ajusta din√°micamente,tomando en cuenta las caracter√≠sticas del dispositivo usado.
+\item Es de c√≥digo abierto y disponible en GitHub.
 \item Gran apoyo de la comunidad de desarrolladores
-\item Sencillez y f·cil de implementar
+\item Sencillez y f√°cil de implementar
 \item Buenos resultados en poco tiempo
 \end{itemize}
 
 \textbf{Estructura y funciones: }\
 \begin{itemize}
-\item Sistema de cuadrilla y diseÒo sensible.
+\item Sistema de cuadrilla y dise√±o sensible.
 \item Componentes re-usables.
-\item Conjunto de hojas de estilo que proveen definiciones b·sicas de estilo para todos los componentes de HTML, dando asÌ uniformidad al navegador y al sistema de anchura.
-\item Los componentes de JavaScript para Bootstrap est·n basados en la librerÌa jQuery de JavaScript.
+\item Conjunto de hojas de estilo que proveen definiciones b√°sicas de estilo para todos los componentes de HTML, dando as√≠ uniformidad al navegador y al sistema de anchura.
+\item Los componentes de JavaScript para Bootstrap est√°n basados en la librer√≠a jQuery de JavaScript.
 \end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% DISE—O E IMPLEMENTACI”N %
+% DISE√ëO E IMPLEMENTACI√ìN %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
-\chapter{DiseÒo e implementaciÛn}
-\section{Arquitectura de la aplicaciÛn: } 
-La arquitectura para el correcto funcionamiento de la aplicaciÛn se basa en la interacciÛn de las tecnologÌas expuestas en el capitulo 3. \\
-En la siguiente imagen, de elaboraciÛn propia, est·n las tecnologÌas principales para el correcto funcionamiento de la aplicaciÛn.
+\chapter{Dise√±o e implementaci√≥n}
+\section{Arquitectura de la aplicaci√≥n: } 
+La arquitectura para el correcto funcionamiento de la aplicaci√≥n se basa en la interacci√≥n de las tecnolog√≠as expuestas en el capitulo 3. \\
+En la siguiente imagen, de elaboraci√≥n propia, est√°n las tecnolog√≠as principales para el correcto funcionamiento de la aplicaci√≥n.
 \begin{figure}[hbtp]
 \centering
 \includegraphics[scale=0.8]{img/arquitectura.png} 
 \end{figure}
 
-El navegador es alimentado por el servidor pythonanywhere. Y dentro de pythonanywhere es donde tenemos nuestros ficheros de configuraciÛn de Django, con los archivos explicados en el capitulo 3. TambiÈn, se alojan en pythonanywhere, los archivos HTML, CSS3, y JS que necesita Django.
+El navegador es alimentado por el servidor pythonanywhere. Y dentro de pythonanywhere es donde tenemos nuestros ficheros de configuraci√≥n de Django, con los archivos explicados en el capitulo 3. Tambi√©n, se alojan en pythonanywhere, los archivos HTML, CSS3, y JS que necesita Django.
 
 \section{Base de datos SQLite3: } 
 
@@ -511,31 +511,31 @@ El navegador es alimentado por el servidor pythonanywhere. Y dentro de pythonany
 \caption{Diagrama con las tablas de la Base de Datos}
 \end{figure}
 \begin{itemize}
-\item \textbf{HistoricoRepo: }En esta tabla guardamos todos los nombres de repositorios que hemos analizado anteriormente, y despuÈs hacemos una consulta para poder aÒadirlos en la columna "historial" del HTML.
-\item \textbf{Historial: } Este objeto lo utilizamos para guardar toda la informaciÛn que mostramos al usuario cuando consulta un an·lisis. Para que de esta forma sea r·pido mostrar sus resultados.
-\item \textbf{Analisis: } En este objeto guardamos la informaciÛn de los errores de un repositorio completo. Sumando los errores de cada archivo, al tipo de error correspondiente. AsÌ podemos analizar los datos r·pidamente.
+\item \textbf{HistoricoRepo: }En esta tabla guardamos todos los nombres de repositorios que hemos analizado anteriormente, y despu√©s hacemos una consulta para poder a√±adirlos en la columna "historial" del HTML.
+\item \textbf{Historial: } Este objeto lo utilizamos para guardar toda la informaci√≥n que mostramos al usuario cuando consulta un an√°lisis. Para que de esta forma sea r√°pido mostrar sus resultados.
+\item \textbf{An√°lisis: } En este objeto guardamos la informaci√≥n de los errores de un repositorio completo. Sumando los errores de cada archivo, al tipo de error correspondiente. As√≠ podemos analizar los datos r√°pidamente.
 
 \end{itemize}
 
 \section{Instalaciones necesarias: } 
-Todo lo instalado ha sido sobre una distribuciÛn de Linux, en mi caso, Ubuntu 15.10.
+Todo lo instalado ha sido sobre una distribuci√≥n de Linux, en mi caso, Ubuntu 15.10.
 \subsection{Django}
-Para empezar con el proyecto, lo primero que hice fue instalar Django en mi ordenador, para ello ejecutÈ en un terminal la sentencia: \\
+Para empezar con el proyecto, lo primero que hice fue instalar Django en mi ordenador, para ello ejecut√© en un terminal la sentencia: \\
 \lstset{language=bash, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
 ~$ pip install django==1.9
 \end{lstlisting}
-Una vez acabada la instalaciÛn, ya estamos listos para crear un proyecto Django.
+Una vez acabada la instalaci√≥n, ya estamos listos para crear un proyecto Django.
 
 \subsection{Pylint}
 Pylint es otro programa que tuve que instalar en mi ordenador.
-Previamente comprobÈ quÈ versiÛn de python estaba usando, puesto que Pylint requiere al menos la versiÛn 2.7 para poder funcionar. Para ello, ejecutÈ en un terminal la sentencia:\\
+Previamente comprob√© qu√© versi√≥n de python estaba usando, puesto que Pylint requiere al menos la versi√≥n 2.7 para poder funcionar. Para ello, ejecut√© en un terminal la sentencia:\\
 \lstset{language=bash, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
 ~$ python -V
 \end{lstlisting}
 \newpage
-Una vez comprobamos que tenemos una versiÛn de Python, superior o igual a Python 2.7, instalamos Pylint, ejecutando en un terminal la siguiente sentencia:\\
+Una vez comprobamos que tenemos una versi√≥n de Python, superior o igual a Python 2.7, instalamos Pylint, ejecutando en un terminal la siguiente sentencia:\\
 \lstset{language=bash, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
 ~$ sudo apt-get install pylint
@@ -544,7 +544,7 @@ Una vez comprobamos que tenemos una versiÛn de Python, superior o igual a Python
 \section{Nuevo Proyecto: }
 
 Una vez que tenemos el equipo listo, empezamos a crear el proyecto Bestfork.
-Creamos un proyecto en Django, ejecutando en un terminal, la sentencia (situ·ndonos en el directorio donde queramos crear el proyecto):\\
+Creamos un proyecto en Django, ejecutando en un terminal, la sentencia (situ√°ndonos en el directorio donde queramos crear el proyecto):\\
 \lstset{language=bash, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
 ~$ django-admin startproject mysite .
@@ -557,7 +557,7 @@ Ahora, tendremos la siguiente estructura:
 \includegraphics[scale=0.8]{img/tree.jpg} 
 \end{figure}
 
-Ahora, que tenemos los archivos necesarios, creamos la aplicaciÛn, escribiendo en un terminal:
+Ahora, que tenemos los archivos necesarios, creamos la aplicaci√≥n, escribiendo en un terminal:
 \lstset{language=bash, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
 ~/Name$ python manage.py startapp "APPNAME"
@@ -569,22 +569,22 @@ y conseguimos esta estructura:
 \includegraphics[scale=0.5]{img/treeBig.jpg} 
 \end{figure}
 
-Es en el archivo views.py, donde vamos a escribir el cÛdigo que deseamos que se ejecute en cada URL. Para eso, configuramos el archivo urls.py.
+Es en el archivo views.py, donde vamos a escribir el c√≥digo que deseamos que se ejecute en cada URL. Para eso, configuramos el archivo urls.py.
 
 \newpage
-\subsection{Esquema del funcionamiento de la aplicaciÛn}
+\subsection{Esquema del funcionamiento de la aplicaci√≥n}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.9]{img/DiagramaFlujoTFG1.png} 
-\caption{Diagrama de flujo del funcionamiento de la aplicaciÛn}
+\caption{Diagrama de flujo del funcionamiento de la aplicaci√≥n}
 \end{figure}
 
-En este Diagrama de Flujo explico el funcionamiento de la aplicaciÛn. 
-El usuario introduce una direcciÛn del repositorio en el que esta interesado y su correo electrÛnico. Si la direcciÛn del repositorio en GitHub no es correcta (se comprueba haciendo uso de la tecnologÌa JavaScript), o la direcciÛn de correo electrÛnico no tiene formato de correo electrÛnico, le aparecer· un mensaje indicativo de quÈ campo no es correcto para que el usuario repita la acciÛn indicando correctamente esos campos.\\
-Una vez el usuario ha introducido correctamente esos datos, pasamos a comprobar si tenemos informaciÛn acerca del repositorio por el que el usuario se interesa. En caso de que ya exista en el servidor, ejecutaremos ``Git Pull'' para tener en cuenta posibles actualizaciones que se hayan producido, en caso contrario, ejecutaremos ``Git Clone'' para descargar ese repositorio. Hay que aclarar que, antes de descargar cualquier repositorio, comprobaremos la ˙ltima fecha de actualizaciÛn, quedando fuera de las descargas/actualizaciones todos los repositorios que lleven sin actualizarse m·s de 180 dÌas. Puesto que la mayorÌa de repositorios que no sufren cambios en m·s de ese periodo de tiempo, no vuelven a actualizarse\\
-DespuÈs de descargar/actualizar los datos necesarios, procedemos al analisis usando Pylint.\\
-Cuando el an·lisis de todos los repositorios ha acabado, enviamos un email al usuario con la url donde puede ver el resultado del an·lisis r·pidamente
-\subsection{P·gina de inicio}
+En este Diagrama de Flujo explico el funcionamiento de la aplicaci√≥n. 
+El usuario introduce una direcci√≥n del repositorio en el que esta interesado y su correo electr√≥nico. Si la direcci√≥n del repositorio en GitHub no es correcta (se comprueba haciendo uso de la tecnolog√≠a JavaScript), o la direcci√≥n de correo electr√≥nico no tiene formato de correo electr√≥nico, le aparecer√° un mensaje indicativo de qu√© campo no es correcto para que el usuario repita la acci√≥n indicando correctamente esos campos.\\
+Una vez el usuario ha introducido correctamente esos datos, pasamos a comprobar si tenemos informaci√≥n acerca del repositorio por el que el usuario se interesa. En caso de que ya exista en el servidor, ejecutaremos ``Git Pull'' para tener en cuenta posibles actualizaciones que se hayan producido, en caso contrario, ejecutaremos ``Git Clone'' para descargar ese repositorio. Hay que aclarar que, antes de descargar cualquier repositorio, comprobaremos la √∫ltima fecha de actualizaci√≥n, quedando fuera de las descargas/actualizaciones todos los repositorios que lleven sin actualizarse m√°s de 180 d√≠as. Puesto que la mayor√≠a de repositorios que no sufren cambios en m√°s de ese periodo de tiempo, no vuelven a actualizarse\\
+Despu√©s de descargar/actualizar los datos necesarios, procedemos al analisis usando Pylint.\\
+Cuando el an√°lisis de todos los repositorios ha acabado, enviamos un email al usuario con la url donde puede ver el resultado del an√°lisis r√°pidamente
+\subsection{P√°gina de inicio}
 \begin{figure}[H]
  \centering
   \subfloat[Ordenador]{
@@ -597,20 +597,20 @@ Cuando el an·lisis de todos los repositorios ha acabado, enviamos un email al us
  \label{f:Vistas}
 \end{figure}
 
-Hemos elegido una p·gina principal sencilla, y elegante. \\
-La p·gina principal hace dos preguntas que el usuario debe contestar con los datos solicitados.\\
-En caso de que la informaciÛn no se complete, o no se complete correctamente, aparecer· un error, volviendo a solicitar los datos necesarios. Pedimos al usuario un email de contacto, puesto que el an·lisis se puede demorar bastante, en funciÛn del tamaÒo de este.\\
+Hemos elegido una p√°gina principal sencilla, y elegante. \\
+La p√°gina principal hace dos preguntas que el usuario debe contestar con los datos solicitados.\\
+En caso de que la informaci√≥n no se complete, o no se complete correctamente, aparecer√° un error, volviendo a solicitar los datos necesarios. Pedimos al usuario un email de contacto, puesto que el an√°lisis se puede demorar bastante, en funci√≥n del tama√±o de este.\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/tiempo.jpg} 
 \caption{Tiempo en analizar un repositorio}
 \end{figure}
 
-En el ejemplo, analiza un repositorio con 36 Forks. Cada Fork tiene de media 113 archivos para analizar. El tiempo en nuestra aplicaciÛn no lo considero de vital importancia, puesto que el usuario puede introducir el email, y hacer otras cosas hasta que reciba el correo avis·ndole de que ya est· disponible el an·lisis.
+En el ejemplo, analiza un repositorio con 36 Forks. Cada Fork tiene de media 113 archivos para analizar. El tiempo en nuestra aplicaci√≥n no lo considero de vital importancia, puesto que el usuario puede introducir el email, y hacer otras cosas hasta que reciba el correo avis√°ndole de que ya est√° disponible el an√°lisis.
 
-Podemos comprobar en la imagen 4.1, que la p·gina se adapta perfectamente a pantallas m·s pequeÒas como la de un smartphone. Aunque creemos que la mayorÌa de usuarios que utilicen la aplicaciÛn ser· desde el ordenador, es importante poder verla correctamente desde otro dispositivo.\\ Esto es relevante, puesto que es una de las mayores revoluciones de los ˙ltimos aÒos, los smartphones en EspaÒa ya ocupan m·s del 54\% de los bosillos\footnote{\url{http://www.abc.es/tecnologia/moviles-telefonia/20140725/abci-ventas-smartphones-tableta-espana-201407251123.html}} y en el planeta ya hay un smartphone por cada cuatro personas. Este dispositivo es lo m·s cerca que vamos a estar de nuestros usuarios, no hay otro dispositivo que sea tan personal,e inseparable. Si adem·s tenemos en cuenta que en el caso de EspaÒa y de otros paÌses, el mÛvil supera al ordenador para acceder a internet, entendemos m·s a˙n la necesidad de que la aplicaciÛn estÈ adaptada a Smartphones. Para que estas p·ginas sean cÛmodas de usar a travÈs del mÛvil y tablet, deben tener men˙s f·ciles y cÛmodos de desplegar, y que sea ligera, puesto que el usuario tiene limitados los datos que puede descargar. En resumen, las p·ginas han de ser ``responsivas''.
+Podemos comprobar en la imagen 4.1, que la p√°gina se adapta perfectamente a pantallas m√°s peque√±as como la de un smartphone. Aunque creemos que la mayor√≠a de usuarios que utilicen la aplicaci√≥n ser√° desde el ordenador, es importante poder verla correctamente desde otro dispositivo.\\ Esto es relevante, puesto que es una de las mayores revoluciones de los √∫ltimos a√±os, los smartphones en Espa√±a ya ocupan m√°s del 54\% de los bosillos\footnote{\url{http://www.abc.es/tecnologia/moviles-telefonia/20140725/abci-ventas-smartphones-tableta-espana-201407251123.html}} y en el planeta ya hay un smartphone por cada cuatro personas. Este dispositivo es lo m√°s cerca que vamos a estar de nuestros usuarios, no hay otro dispositivo que sea tan personal,e inseparable. Si adem√°s tenemos en cuenta que en el caso de Espa√±a y de otros pa√≠ses, el m√≥vil supera al ordenador para acceder a internet, entendemos m√°s a√∫n la necesidad de que la aplicaci√≥n est√© adaptada a Smartphones. Para que estas p√°ginas sean c√≥modas de usar a trav√©s del m√≥vil y tablet, deben tener men√∫s f√°ciles y c√≥modos de desplegar, y que sea ligera, puesto que el usuario tiene limitados los datos que puede descargar. En resumen, las p√°ginas han de ser ``responsivas''.
 
-\subsection{P·gina con el resultado}
+\subsection{P√°gina con el resultado}
 
 \begin{figure}[H]
  \centering
@@ -624,9 +624,9 @@ Podemos comprobar en la imagen 4.1, que la p·gina se adapta perfectamente a pant
  \label{f:Vistas}
 \end{figure}
 
-La p·gina en la que aparece el an·lisis es tambiÈn sencilla. DebÌa ser una p·gina clara, nada de men˙s llenos de opciones, una p·gina intuitiva y cÛmoda, de forma que el usuario entre en la web y en un ``golpe de vista'' entienda lo que mostramos. Por eso esta claramente dividida en 4 zonas, claramente diferenciadas, y es igualmente compatible con telÈfonos mÛviles. 
+La p√°gina en la que aparece el an√°lisis es tambi√©n sencilla. Deb√≠a ser una p√°gina clara, nada de men√∫s llenos de opciones, una p√°gina intuitiva y c√≥moda, de forma que el usuario entre en la web y en un ``golpe de vista'' entienda lo que mostramos. Por eso esta claramente dividida en 4 zonas, claramente diferenciadas, y es igualmente compatible con tel√©fonos m√≥viles. 
 
-Analizamos cada zona de la p·gina:
+Analizamos cada zona de la p√°gina:
 
 \begin{figure}[hbtp]
 \centering
@@ -634,7 +634,7 @@ Analizamos cada zona de la p·gina:
 \caption{Zona Superior}
 \end{figure}
 
-AquÌ, vemos la zona superior de la p·gina. Con el nombre de la aplicaciÛn, y de nuevo, dos cajas para hacer un an·lisis de otro repositorio que pudiera interesar al usuario. 
+Aqu√≠, vemos la zona superior de la p√°gina. Con el nombre de la aplicaci√≥n, y de nuevo, dos cajas para hacer un an√°lisis de otro repositorio que pudiera interesar al usuario. 
 
 \begin{figure}[H]
 \centering
@@ -642,15 +642,15 @@ AquÌ, vemos la zona superior de la p·gina. Con el nombre de la aplicaciÛn, y de 
 \caption{Zona izquierda: Historial}
 \end{figure}
 
-En el lado izquierdo de la p·gina, tenemos una columna con el historial de an·lisis que otros usuarios, o Èl mismo, han solicitado. Tiene un acceso pr·cticamente instant·neo, como observamos en la siguiente imagen.
+En el lado izquierdo de la p√°gina, tenemos una columna con el historial de an√°lisis que otros usuarios, o √©l mismo, han solicitado. Tiene un acceso pr√°cticamente instant√°neo, como observamos en la siguiente imagen.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/tiempoHist.png} 
-\caption{Tiempo en ver una p·gina del historial}
+\caption{Tiempo en ver una p√°gina del historial}
 \end{figure}
 
-Es un acceso r·pido, porque guardamos otros an·lisis (siempre sin ning˙n filtro aplicado), en una base de datos y luego solo hace una consulta a esa base de datos.
+Es un acceso r√°pido, porque guardamos otros an√°lisis (siempre sin ning√∫n filtro aplicado), en una base de datos y luego solo hace una consulta a esa base de datos.
 
 \begin{figure}[H]
 \centering
@@ -658,12 +658,12 @@ Es un acceso r·pido, porque guardamos otros an·lisis (siempre sin ning˙n filtro 
 \caption{Tabla principal}
 \end{figure}
 
-Esta tabla, situada en el centro de la p·gina es donde el usuario puede visualizar los resultados obtenidos. El programa Pylint devuelve resultados entre 0-10. Nuestra puntuaciÛn va de 0 hasta 110. øPor quÈ? Porque es habitual que en programas de gran tamaÒo, se acumulen una gran cantidad de fallos y Pylint devuelva una nota negativa\footnote{\url{https://docs.pylint.org/faq.html}}. 
+Esta tabla, situada en el centro de la p√°gina es donde el usuario puede visualizar los resultados obtenidos. El programa Pylint devuelve resultados entre 0-10. Nuestra puntuaci√≥n va de 0 hasta 110. ¬øPor qu√©? Porque es habitual que en programas de gran tama√±o, se acumulen una gran cantidad de fallos y Pylint devuelva una nota negativa\footnote{\url{https://docs.pylint.org/faq.html}}. 
 
-A˙n asÌ, recordamos a los usuarios, que una buena nota es cuando el resultado es mayor que 105.\\
-F·cilmente, podemos comparar los Forks, con el repositorio principal, que se muestra el primero en una fila roja.\\
-Si pulsamos sobre el nombre de alguno de los Forks, nos despliega todos los errores que tiene el cÛdigo en cada archivo y si volvemos a pulsar, los oculta.
-TambiÈn mostramos el n˙mero de archivos que tiene cada Fork.
+A√∫n as√≠, recordamos a los usuarios, que una buena nota es cuando el resultado es mayor que 105.\\
+F√°cilmente, podemos comparar los Forks, con el repositorio principal, que se muestra el primero en una fila roja.\\
+Si pulsamos sobre el nombre de alguno de los Forks, nos despliega todos los errores que tiene el c√≥digo en cada archivo y si volvemos a pulsar, los oculta.
+Tambi√©n mostramos el n√∫mero de archivos que tiene cada Fork.
 \newpage
 \begin{figure}[H]
 \centering
@@ -672,33 +672,33 @@ TambiÈn mostramos el n˙mero de archivos que tiene cada Fork.
 \end{figure}
 
 
-En esta columna situada a la derecha, el usuario selecciona los filtros que quiere aplicar al an·lisis para que los resultados se ajusten m·s a sus necesidades. Los filtros que hemos puesto son los errores que m·s se repiten en las baterÌas de pruebas que hemos hecho.\\
+En esta columna situada a la derecha, el usuario selecciona los filtros que quiere aplicar al an√°lisis para que los resultados se ajusten m√°s a sus necesidades. Los filtros que hemos puesto son los errores que m√°s se repiten en las bater√≠as de pruebas que hemos hecho.\\
 Y son los siguientes:
 \begin{itemize}
-\item Invalid Names: Error cuando un nombre no encaja con la convenciÛn de nomenclatura asociada a su tipo
+\item Invalid Names: Error cuando un nombre no encaja con la convenci√≥n de nomenclatura asociada a su tipo
 \item Difference between Tabs/Espace: Se utiliza cuando hay espacios y tabulaciones mezclados en una linea
-\item Count spaces and ``;'': Se utiliza cuando se usa un n˙mero incorrecto de los espacios alrededor de un operador,  o cuando acaba una linea en ``;'' siendo innecesario
-\item Have Docstring: Se usa cuando un mÛdulo, la funciÛn, la clase o mÈtodo no tiene ninguna cadena de documentaciÛn. Algunos mÈtodos especiales, como init (), no requieren una cadena de documentaciÛn, pero esto se tiene en cuenta.
-\item Unused variable: Se utiliza cuando se ha declarado una variable, pero no se esta utilizando a lo largo del cÛdigo.
-\item Unnecessary parens: Se utiliza cuando en alguna linea hay m·s parÈntesis de los que realmente se necesitan.
+\item Count spaces and ``;'': Se utiliza cuando se usa un n√∫mero incorrecto de los espacios alrededor de un operador,  o cuando acaba una linea en ``;'' siendo innecesario
+\item Have Docstring: Se usa cuando un m√≥dulo, la funci√≥n, la clase o m√©todo no tiene ninguna cadena de documentaci√≥n. Algunos m√©todos especiales, como init (), no requieren una cadena de documentaci√≥n, pero esto se tiene en cuenta.
+\item Unused variable: Se utiliza cuando se ha declarado una variable, pero no se esta utilizando a lo largo del c√≥digo.
+\item Unnecessary parens: Se utiliza cuando en alguna linea hay m√°s par√©ntesis de los que realmente se necesitan.
 \end{itemize}
-Al pulsar en el botÛn actualizar, se proceder· a recalcular la nota de todos los repositorios teniendo en cuenta la selecciÛn del usuario. Mientras esto ocurre, se le ocultan los botones al Usuario para que no interfiera con las operaciones que est· haciendo el servidor. Adem·s, aparece una animaciÛn informando al usuario que se est· cargando el an·lisis.\\
-Esto es, sobretodo, para hacer al usuario consciente de que se est· cargando su an·lisis, y no parezca que la p·gina no est· respondiendo a su peticiÛn, ya que la operaciÛn puede demorarse varios minutos, en caso de que fuese un repositorio con muchos Forks, y/o archivos Python.
+Al pulsar en el bot√≥n actualizar, se proceder√° a recalcular la nota de todos los repositorios teniendo en cuenta la selecci√≥n del usuario. Mientras esto ocurre, se le ocultan los botones al Usuario para que no interfiera con las operaciones que est√° haciendo el servidor. Adem√°s, aparece una animaci√≥n informando al usuario que se est√° cargando el an√°lisis.\\
+Esto es, sobretodo, para hacer al usuario consciente de que se est√° cargando su an√°lisis, y no parezca que la p√°gina no est√° respondiendo a su petici√≥n, ya que la operaci√≥n puede demorarse varios minutos, en caso de que fuese un repositorio con muchos Forks, y/o archivos Python.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/charge1.png} 
-\caption{Ejemplo de la p·gina actualizando}
+\caption{Ejemplo de la p√°gina actualizando}
 \end{figure}
 \newpage
-\subsection{P·gina FAQs}
+\subsection{P√°gina FAQs}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/faqs1.png} 
-\caption{P·gina de ayuda}
+\caption{P√°gina de ayuda}
 \end{figure}
-Pese a que hemos intentado, que la web, sea intuitiva y cÛmoda, puede que algunos usuarios tengan dudas sobre el funcionamiento de la misma, por eso creamos una p·gina con las posibles preguntas m·s frecuentes (FAQs).\\
-Creemos que cualquier p·gina que tenga alguna interacciÛn con el usuario debe incluir una p·gina donde se respondan las Frequently Asqued Questions, y que sea de acceso r·pido, y directo a la informaciÛn.\\
+Pese a que hemos intentado, que la web, sea intuitiva y c√≥moda, puede que algunos usuarios tengan dudas sobre el funcionamiento de la misma, por eso creamos una p√°gina con las posibles preguntas m√°s frecuentes (FAQs).\\
+Creemos que cualquier p√°gina que tenga alguna interacci√≥n con el usuario debe incluir una p√°gina donde se respondan las Frequently Asqued Questions, y que sea de acceso r√°pido, y directo a la informaci√≥n.\\
 
 
 
@@ -711,19 +711,19 @@ Creemos que cualquier p·gina que tenga alguna interacciÛn con el usuario debe in
 \cleardoublepage
 \chapter{Resultados}
 
-Para poder conseguir resultados reales, decidimos subir la p·gina a ``pythonanywhere.com'' para que la aplicaciÛn tuviera visibilidad desde cualquier lugar. He elegido pythonanywhere.com, porque aunque hacer funcionar Django aquÌ no fue una tarea trivial, si ofrecÌan un servicio aceptable en su versiÛn gratuita, y en caso de que en el futuro quisiÈramos un mejor servicio, los precios eran los m·s econÛnimos compar·ndolo con hostgator.com o Heroku, que son las alternativas que barajamos.\\
-Teniendo el servidor en mi ordenador personal, no tenÌa ning˙n problema en cuanto al tamaÒo del repositorio que querÌa analizar, puesto que contaba con alta velocidad de conexiÛn a internet, y buena velocidad de CPU para analizar los repositorios, pero al subir la aplicaciÛn a Pythonanywhere.com se me presentÛ el problema de que usando la versiÛn gratuita, tenÌa limitaciones en lo referente al ancho de banda, al espacio disponible, y la baja velocidad de CPU que me ofrecÌan.\\
-Como los consumos de la aplicaciÛn, dependen directamente del repositorio a analizar, para las pruebas utilizarÌa repositorios de tamaÒo moderado.
+Para poder conseguir resultados reales, decidimos subir la p√°gina a ``pythonanywhere.com'' para que la aplicaci√≥n tuviera visibilidad desde cualquier lugar. He elegido pythonanywhere.com, porque aunque hacer funcionar Django aqu√≠ no fue una tarea trivial, si ofrec√≠an un servicio aceptable en su versi√≥n gratuita, y en caso de que en el futuro quisi√©ramos un mejor servicio, los precios eran los m√°s econ√≥nimos compar√°ndolo con hostgator.com o Heroku, que son las alternativas que barajamos.\\
+Teniendo el servidor en mi ordenador personal, no ten√≠a ning√∫n problema en cuanto al tama√±o del repositorio que quer√≠a analizar, puesto que contaba con alta velocidad de conexi√≥n a internet, y buena velocidad de CPU para analizar los repositorios, pero al subir la aplicaci√≥n a Pythonanywhere.com se me present√≥ el problema de que usando la versi√≥n gratuita, ten√≠a limitaciones en lo referente al ancho de banda, al espacio disponible, y la baja velocidad de CPU que me ofrec√≠an.\\
+Como los consumos de la aplicaci√≥n, dependen directamente del repositorio a analizar, para las pruebas utilizar√≠a repositorios de tama√±o moderado.
 
-Fui buscando repositorios, con contenido cuyo cÛdigo estuviese escrito en Python. EncontrÈ un repositorio de un portfolio con varios archivos escritos en Python. El repositorio contaba con 10 archivos, y ning˙n Fork, por lo que no tendrÌa problema en analizarlo en ``pythonanywhere.com''.\\
-EmpecÈ ejecutando en el terminal: 
+Fui buscando repositorios, con contenido cuyo c√≥digo estuviese escrito en Python. Encontr√© un repositorio de un portfolio con varios archivos escritos en Python. El repositorio contaba con 10 archivos, y ning√∫n Fork, por lo que no tendr√≠a problema en analizarlo en ``pythonanywhere.com''.\\
+Empec√© ejecutando en el terminal: 
 \begin{lstlisting}[frame=single]
 git clone https://github.com/TheBronx/portfolio.git
 \end{lstlisting}
 
-De esta forma, tenÌa exactamente la misma puntuaciÛn que el usuario previo en la aplicaciÛn BestFork.
-AnalicÈ los errores que presentaban sus lineas de cÛdigo, y trabajÈ para depurar su cÛdigo, sobre los errores que arrojaba la aplicaciÛn BestFork.\\
-Una vez habÌa corregido errores que no afectaban directamente al funcionamiento del su programa, lo analicÈ de nuevo con la aplicaciÛn BestFork, y obtuve unas dÈcimas de mejora.
+De esta forma, ten√≠a exactamente la misma puntuaci√≥n que el usuario previo en la aplicaci√≥n BestFork.
+Analic√© los errores que presentaban sus lineas de c√≥digo, y trabaj√© para depurar su c√≥digo, sobre los errores que arrojaba la aplicaci√≥n BestFork.\\
+Una vez hab√≠a corregido errores que no afectaban directamente al funcionamiento del su programa, lo analic√© de nuevo con la aplicaci√≥n BestFork, y obtuve unas d√©cimas de mejora.
 
 \begin{figure}[H]
 \centering
@@ -731,33 +731,33 @@ Una vez habÌa corregido errores que no afectaban directamente al funcionamiento 
 \caption{Captura de un repositorio con un fork}
 \end{figure}
 
-En tan sÛlo unas horas, habÌa depurado su cÛdigo y cualquier persona podÌa comprobar que mi cÛdigo arrojaba una mayor puntuaciÛn que el repositorio principal, gracias a corregir errores. Adem·s, el mismo dueÒo del repositorio podÌa comprobarlo en la p·gina web.\\
-Con estos datos, creÈ un Pull Request con la esperanza de que lo aceptase, e hiciese un merge de mi propuesta a su cÛdigo.
+En tan s√≥lo unas horas, hab√≠a depurado su c√≥digo y cualquier persona pod√≠a comprobar que mi c√≥digo arrojaba una mayor puntuaci√≥n que el repositorio principal, gracias a corregir errores. Adem√°s, el mismo due√±o del repositorio pod√≠a comprobarlo en la p√°gina web.\\
+Con estos datos, cre√© un Pull Request con la esperanza de que lo aceptase, e hiciese un merge de mi propuesta a su c√≥digo.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/pullrequest1.png} 
-\caption{Captura de la creaciÛn de un pull request}
+\caption{Captura de la creaci√≥n de un pull request}
 \end{figure}
 
-Tras mandar el pull request. El usuario dueÒo del repositorio principal hizo un merge de mi cÛdigo en su cÛdigo, aceptando asÌ los cambios que le propuse.
+Tras mandar el pull request. El usuario due√±o del repositorio principal hizo un merge de mi c√≥digo en su c√≥digo, aceptando as√≠ los cambios que le propuse.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/merge1.png} 
 \caption{El usuario hace merge de mi pull request}
 \end{figure}
 
-Tras el merge, le pedimos a la aplicaciÛn que nos analice de nuevo el repositorio y sus Forks. El resultado, no es ninguna sorpresa, tanto mi fork, como el repositorio principal obtienen la misma puntuaciÛn.
+Tras el merge, le pedimos a la aplicaci√≥n que nos analice de nuevo el repositorio y sus Forks. El resultado, no es ninguna sorpresa, tanto mi fork, como el repositorio principal obtienen la misma puntuaci√≥n.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/puntuacionigual.png} 
-\caption{Puntuaciones tr·s el merge}
+\caption{Puntuaciones tr√°s el merge}
 \end{figure}
-Con esta prueba, queremos demostrar que cumplimos uno de los objetivos especÌficos, que describimos como: \textbf{ Argumento para crear un Pull Request}, en la memoria de este mismo proyecto.
+Con esta prueba, queremos demostrar que cumplimos uno de los objetivos espec√≠ficos, que describimos como: \textbf{ Argumento para crear un Pull Request}, en la memoria de este mismo proyecto.
 
-TambiÈn, hemos querido demostrar otro de los objetivos especÌficos, \textbf{Para dueÒos del repositorio}. Este es un ejemplo de un repositorio educativo, donde la forma de entrega de sus trabajos, es haciendo un Fork de la rama que ofrecen los profesores.\\\
+Tambi√©n, hemos querido demostrar otro de los objetivos espec√≠ficos, \textbf{Para due√±os del repositorio}. Este es un ejemplo de un repositorio educativo, donde la forma de entrega de sus trabajos, es haciendo un Fork de la rama que ofrecen los profesores.\\\
 
-Con esta aplicaciÛn, los dueÒos del repositorio, en este caso, los profesores, pueden ver quienes son, a priori, los alumnos que est·n llevando a cabo un mejor trabajo. 
+Con esta aplicaci√≥n, los due√±os del repositorio, en este caso, los profesores, pueden ver quienes son, a priori, los alumnos que est√°n llevando a cabo un mejor trabajo. 
 
 \begin{figure}[H]
 \centering
@@ -765,7 +765,7 @@ Con esta aplicaciÛn, los dueÒos del repositorio, en este caso, los profesores, p
 \caption{Puntuaciones alumnos}
 \end{figure}
 
-En tan sÛlo unos minutos, puedes hacer una breve comparativa de todos los Forks, para ver como evolucionan, en este caso, los alumnos. Adem·s, podemos adelantar fallos comunes que se observen en la mayorÌa de alumnos para advertirles.\\
+En tan s√≥lo unos minutos, puedes hacer una breve comparativa de todos los Forks, para ver como evolucionan, en este caso, los alumnos. Adem√°s, podemos adelantar fallos comunes que se observen en la mayor√≠a de alumnos para advertirles.\\
 
 
 
@@ -783,81 +783,81 @@ En tan sÛlo unos minutos, puedes hacer una breve comparativa de todos los Forks,
 \chapter{Conclusiones}
 \label{chap:conclusiones}
 
-Como hemos ido viendo a lo largo de la memoria, Bestfork es una aplicaciÛn con un potencial realmente elevado. Hemos utilizado las ˙ltimas TecnologÌas Web que han permitido que el diseÒo de la p·gina sea sencillo y atractivo. En todo momento he intentado orientar la p·gina hacia la practicidad, una interfaz limpia para que el usuario no tuviese demasiadas cosas en pantalla que le distrajesen del resultado final, evitando en la medida de lo posible que tuviese que hacer scroll para ver los resultados. Que el diseÒo se vea moderno y sea responsivo, se debe fundamentalmente a Bootstrap, que facilita mucho el trabajo de diseÒo de la p·gina, y te ofrece herramientas para adaptar la interfaz a otros tamaÒos de pantalla, algo imprescindible en cualquier aplicaciÛn web que se diseÒe hoy en dÌa.\\ 
-El lenguaje que analizamos ahora mismo es ˙nicamente Python, que es un lenguaje muy utilizado y uno de los m·s activos en los repositorios de GitHub\footnote{\url{http://www.muylinux.com/2015/08/21/lenguajes-programacion-abiertos-github}}. Era importante elegir un lenguaje con muchos desarrolladores detr·s para que empiece a darse a conocer cuanto antes.\\
-Al principio del trabajo, me preocupaba el tiempo que tardaba en analizar los repositorios, y ahÌ surgiÛ la idea de mandar un correo electrÛnico cuando estuviese listo el an·lisis.
-Respecto a los resultados, estoy realmente satisfecho. Hemos podido demostrar como un desarrollador con bastante actividad dentro de GitHub, y por internet, ha aceptado un pull request de un usuario como el mÌo, que cuenta con poca trayectoria y poco cÛdigo dentro de GitHub. Considero que esto ayuda a entender lo f·cil que es mejorar el cÛdigo de un repositorio con BestFork. \\
-La aplicaciÛn Web, aunque est· en inglÈs, no presentar· ninguna dificultad de uso para ninguna persona que no conozca el idioma, puesto que es muy intuitiva.
+Como hemos ido viendo a lo largo de la memoria, Bestfork es una aplicaci√≥n con un potencial realmente elevado. Hemos utilizado las √∫ltimas Tecnolog√≠as Web que han permitido que el dise√±o de la p√°gina sea sencillo y atractivo. En todo momento he intentado orientar la p√°gina hacia la practicidad, una interfaz limpia para que el usuario no tuviese demasiadas cosas en pantalla que le distrajesen del resultado final, evitando en la medida de lo posible que tuviese que hacer scroll para ver los resultados. Que el dise√±o se vea moderno y sea responsivo, se debe fundamentalmente a Bootstrap, que facilita mucho el trabajo de dise√±o de la p√°gina, y te ofrece herramientas para adaptar la interfaz a otros tama√±os de pantalla, algo imprescindible en cualquier aplicaci√≥n web que se dise√±e hoy en d√≠a.\\ 
+El lenguaje que analizamos ahora mismo es √∫nicamente Python, que es un lenguaje muy utilizado y uno de los m√°s activos en los repositorios de GitHub\footnote{\url{http://www.muylinux.com/2015/08/21/lenguajes-programacion-abiertos-github}}. Era importante elegir un lenguaje con muchos desarrolladores detr√°s para que empiece a darse a conocer cuanto antes.\\
+Al principio del trabajo, me preocupaba el tiempo que tardaba en analizar los repositorios, y ah√≠ surgi√≥ la idea de mandar un correo electr√≥nico cuando estuviese listo el an√°lisis.
+Respecto a los resultados, estoy realmente satisfecho. Hemos podido demostrar como un desarrollador con bastante actividad dentro de GitHub, y por internet, ha aceptado un pull request de un usuario como el m√≠o, que cuenta con poca trayectoria y poco c√≥digo dentro de GitHub. Considero que esto ayuda a entender lo f√°cil que es mejorar el c√≥digo de un repositorio con BestFork. \\
+La aplicaci√≥n Web, aunque est√° en ingl√©s, no presentar√° ninguna dificultad de uso para ninguna persona que no conozca el idioma, puesto que es muy intuitiva.
 
 
-\section{ConsecuciÛn de objetivos}
+\section{Consecuci√≥n de objetivos}
 \label{sec:consecucion-objetivos}
 
-Visto lo expuesto a lo largo de la memoria, y apoy·ndonos en las demostraciones del CapÌtulo 5 llegamos a la conclusiÛn de que hemos cumplido los objetivos fijados al comienzo de esta memoria.
-Hemos querido demostrar, a su vez, que aparte de haber creado una aplicaciÛn Web que funciona, es una aplicaciÛn ˙til y que a˙n tiene un largo camino por delante.
+Visto lo expuesto a lo largo de la memoria, y apoy√°ndonos en las demostraciones del Cap√≠tulo 5 llegamos a la conclusi√≥n de que hemos cumplido los objetivos fijados al comienzo de esta memoria.
+Hemos querido demostrar, a su vez, que aparte de haber creado una aplicaci√≥n Web que funciona, es una aplicaci√≥n √∫til y que a√∫n tiene un largo camino por delante.
 
-Al comienzo del proyecto, siempre enfocaba el objetivo hacia ``Controlar repositorios propios'' pero seg˙n iba desarrollando la aplicaciÛn, iba abriendo nuevos horizontes, empezando a ser consciente de que la aplicaciÛn tenÌa muchas m·s funciones, y por eso ampliamos los objetivos de la aplicaciÛn.
+Al comienzo del proyecto, siempre enfocaba el objetivo hacia ``Controlar repositorios propios'' pero seg√∫n iba desarrollando la aplicaci√≥n, iba abriendo nuevos horizontes, empezando a ser consciente de que la aplicaci√≥n ten√≠a muchas m√°s funciones, y por eso ampliamos los objetivos de la aplicaci√≥n.
 
-\section{AplicaciÛn de lo aprendido}
+\section{Aplicaci√≥n de lo aprendido}
 \label{sec:aplicacion}
 
-Durante mi formaciÛn en la Universidad Rey Juan Carlos, he tenido la oportunidad de aprender y formarme en varios campos. He adquirido una serie de habilidades que me han servido para realizar este proyecto m·s f·cilmente. Algunas de estas habilidades son:
+Durante mi formaci√≥n en la Universidad Rey Juan Carlos, he tenido la oportunidad de aprender y formarme en varios campos. He adquirido una serie de habilidades que me han servido para realizar este proyecto m√°s f√°cilmente. Algunas de estas habilidades son:
 \begin{enumerate}
-  \item La programaciÛn es una de las bases de este proyecto. Cuando empecÈ la universidad no sabÌa nada acerca de la programaciÛn, y las asignaturas como ``Fundamentos de la programaciÛn'', ``ProgramaciÛn de Sistemas de TelecomunicaciÛn'' o ``Sistemas Operativos'' entre otras, fueron las que me dieron las bases de programar en practicamente cualquier lenguaje, puesto que conozco las posibilidades que hay en la programaciÛn, y ``sÛlo'' es aprender a escribirlas en otro lenguaje.
-  \item TambiÈn habÌa utilizado Python, lenguaje utilizado en la asignatura ``Laboratorio de AdministraciÛn y GestiÛn de Redes y Sistemas'' que ha sido uno de los lenguajes m·s utilizados en el desarrollo de esta aplicaciÛn puesto que en Django los views se escriben en este lenguaje.
-  \item Uso de los lenguajes de programaciÛn Web (HTML5, Javascript y CSS3), y del framework Bootstrap, conceptos que se impartieron en la asignatura ``Aplicaciones Telem·ticas'' y que han hecho que el cliente tenga una mejor experiencia mientras navega por la p·gina web.
-  \item Capacidad para aprender de manera autÛnoma nuevos conocimientos y tÈcnicas adecuados para la concepciÛn, y el desarrollo de nuevas aplicaciones. Esto es algo que no he aprendido en ninguna asignatura en concreto, sino a lo largo de mi vida estudiantil y que en el proyecto he tenido que poner en pr·ctica m·s que nunca.
-  \item Capacidad para entender la API de Github. En las asignaturas relacionadas con Java y Android, aprendÌ lo que eran las APIs y para quÈ servÌan. Cuando me enfrentÈ a la API de Github, no tuve ning˙n problema en comprender como utilizarla.
+  \item La programaci√≥n es una de las bases de este proyecto. Cuando empec√© la universidad no sab√≠a nada acerca de la programaci√≥n, y las asignaturas como ``Fundamentos de la programaci√≥n'', ``Programaci√≥n de Sistemas de Telecomunicaci√≥n'' o ``Sistemas Operativos'' entre otras, fueron las que me dieron las bases de programar en practicamente cualquier lenguaje, puesto que conozco las posibilidades que hay en la programaci√≥n, y ``s√≥lo'' es aprender a escribirlas en otro lenguaje.
+  \item Tambi√©n hab√≠a utilizado Python, lenguaje utilizado en la asignatura ``Laboratorio de Administraci√≥n y Gesti√≥n de Redes y Sistemas'' que ha sido uno de los lenguajes m√°s utilizados en el desarrollo de esta aplicaci√≥n puesto que en Django los views se escriben en este lenguaje.
+  \item Uso de los lenguajes de programaci√≥n Web (HTML5, Javascript y CSS3), y del framework Bootstrap, conceptos que se impartieron en la asignatura ``Aplicaciones Telem√°ticas'' y que han hecho que el cliente tenga una mejor experiencia mientras navega por la p√°gina web.
+  \item Capacidad para aprender de manera aut√≥noma nuevos conocimientos y t√©cnicas adecuados para la concepci√≥n, y el desarrollo de nuevas aplicaciones. Esto es algo que no he aprendido en ninguna asignatura en concreto, sino a lo largo de mi vida estudiantil y que en el proyecto he tenido que poner en pr√°ctica m√°s que nunca.
+  \item Capacidad para entender la API de Github. En las asignaturas relacionadas con Java y Android, aprend√≠ lo que eran las APIs y para qu√© serv√≠an. Cuando me enfrent√© a la API de Github, no tuve ning√∫n problema en comprender como utilizarla.
 \end{enumerate}
 
 
 \section{Lecciones aprendidas}
 \label{sec:lecciones_aprendidas}
-Arrancar con el proyecto fue algo costoso, ya que habÌa tecnologÌas que nunca habÌa utilizado y, por tanto, tuve que aprenderlas de cero. Aunque esto jugase en mi contra al comienzo, es algo que con el tiempo se volver· a mi favor, puesto que he obtenido conocimientos que me servir·n, como por ejemplo:
+Arrancar con el proyecto fue algo costoso, ya que hab√≠a tecnolog√≠as que nunca hab√≠a utilizado y, por tanto, tuve que aprenderlas de cero. Aunque esto jugase en mi contra al comienzo, es algo que con el tiempo se volver√° a mi favor, puesto que he obtenido conocimientos que me servir√°n, como por ejemplo:
 
 \begin{enumerate}
-  \item Manejo de \LaTeX . Herramienta que he utilizado para redactar esta memoria, a pesar de ser poco intuitiva a primera vista, r·pidamente salen a relucir sus ventajas por hacerlo todo bastante m·s sencillo.
-  \item Servidor Django. Nunca habÌa usado esta tecnologÌa para implementar un servidor basada en la arquitectura Modelo-Vista-Controlador. 
+  \item Manejo de \LaTeX . Herramienta que he utilizado para redactar esta memoria, a pesar de ser poco intuitiva a primera vista, r√°pidamente salen a relucir sus ventajas por hacerlo todo bastante m√°s sencillo.
+  \item Servidor Django. Nunca hab√≠a usado esta tecnolog√≠a para implementar un servidor basada en la arquitectura Modelo-Vista-Controlador. 
   \item Aprendizaje de comandos para configurar el servidor django con la base de datos SQLite3
-  \item TambiÈn, he aprendido a planificar un proyecto. Desde planificar mi auto-formaciÛn en Django y SQLite3, hasta la ejecuciÛn del proyecto en los plazos establecidos.
-  \item Pylint. No sabÌa de la existencia de programas que evaluaban la calidad de un cÛdigo de programaciÛn. He aprendido quÈ tipo de errores analizar, a comprender los ficheros que devuelve, y a customizarlo para sacar m·s partido a sus analisis.
+  \item Tambi√©n, he aprendido a planificar un proyecto. Desde planificar mi auto-formaci√≥n en Django y SQLite3, hasta la ejecuci√≥n del proyecto en los plazos establecidos.
+  \item Pylint. No sab√≠a de la existencia de programas que evaluaban la calidad de un c√≥digo de programaci√≥n. He aprendido qu√© tipo de errores analizar, a comprender los ficheros que devuelve, y a customizarlo para sacar m√°s partido a sus analisis.
 \end{enumerate}
 
 \section{Trabajos futuros}
 \label{sec:trabajos_futuros}
 
-Todo el software puede mejorarse. En este caso, es la primera versiÛn de BestFork y su margen de mejora es muy alto.\\
+Todo el software puede mejorarse. En este caso, es la primera versi√≥n de BestFork y su margen de mejora es muy alto.\\
 \begin{enumerate}
-  \item \textbf{Analizar m·s lenguajes:} Actualmente, BestFork sÛlo analiza un lenguaje de programaciÛn de entre todos los que hay. Por ello una buena mejora serÌa que el usuario seleccionase el lenguaje, o mejor a˙n, poder analizar varios lenguajes de un mismo repositorio. De esta forma, obtendrÌamos una puntuaciÛn del repositorio todavÌa m·s fiable y concreta.
+  \item \textbf{Analizar m√°s lenguajes:} Actualmente, BestFork s√≥lo analiza un lenguaje de programaci√≥n de entre todos los que hay. Por ello una buena mejora ser√≠a que el usuario seleccionase el lenguaje, o mejor a√∫n, poder analizar varios lenguajes de un mismo repositorio. De esta forma, obtendr√≠amos una puntuaci√≥n del repositorio todav√≠a m√°s fiable y concreta.
   \item \textbf{Analizar en Background:} Muy interesante
-   serÌa que el servidor analizase la peticiÛn en segundo plano para que el usuario pueda pedir analizar m·s repositorios sin esperar a tener los resultados del anterior.
-    \item \textbf{Ampliar filtrado:} En mi proyecto, hemos puesto 6 filtros que son los errores m·s comunes que hemos observado, de todas formas puede que un usuario estÈ interesado en no tener en cuenta cierto error. Por ello, podÌan ampliarse, o bien, que el usuario introdujese el n˙mero de error de Pylint que no quiere tener en cuenta y asÌ poder customizar mejor el resultado.
-  \item \textbf{Analizar errores m·s repetidos:} Hacer un an·lisis de los errores m·s cometidos por los desarrolladores de un repositorio, puede ayudar a filtrar mejor los resultados
-    \item \textbf{Mejorar tiempos de an·lisis:} Aunque, como ya hemos explicado en la memoria, no es algo fundamental que una aplicaciÛn sea m·s r·pida, siempre es m·s interesante. Por ello, creemos que un servidor que use threads al analizar los repositorios (en caso de tener un procesador compatible) mejorarÌa los tiempos en analizar los repositorios.
-        \item \textbf{Seguridad:} PodrÌan surgir ataques inform·ticos. Ahora mismo, estamos muy expuestos a sufrir un ataque de denegaciÛn de servicio (DDoS).
+   ser√≠a que el servidor analizase la petici√≥n en segundo plano para que el usuario pueda pedir analizar m√°s repositorios sin esperar a tener los resultados del anterior.
+    \item \textbf{Ampliar filtrado:} En mi proyecto, hemos puesto 6 filtros que son los errores m√°s comunes que hemos observado, de todas formas puede que un usuario est√© interesado en no tener en cuenta cierto error. Por ello, pod√≠an ampliarse, o bien, que el usuario introdujese el n√∫mero de error de Pylint que no quiere tener en cuenta y as√≠ poder customizar mejor el resultado.
+  \item \textbf{Analizar errores m√°s repetidos:} Hacer un an√°lisis de los errores m√°s cometidos por los desarrolladores de un repositorio, puede ayudar a filtrar mejor los resultados
+    \item \textbf{Mejorar tiempos de an√°lisis:} Aunque, como ya hemos explicado en la memoria, no es algo fundamental que una aplicaci√≥n sea m√°s r√°pida, siempre es m√°s interesante. Por ello, creemos que un servidor que use threads al analizar los repositorios (en caso de tener un procesador compatible) mejorar√≠a los tiempos en analizar los repositorios.
+        \item \textbf{Seguridad:} Podr√≠an surgir ataques inform√°ticos. Ahora mismo, estamos muy expuestos a sufrir un ataque de denegaci√≥n de servicio (DDoS).
 \end{enumerate}
 
-\section{øPor quÈ elegÌ este proyecto?}
-TenÌa claro que querÌa un proyecto que realmente me sirviese para aprender, y querÌa usar tecnologÌas relacionadas con la web.\\
-Me dirigÌ al profesor Gregorio, porque me gustÛ su forma de dar las clases. Adem·s, una asignatura que impartiÛ, iba relacionado con la Web.\\
-Al hablar con Èl, me contÛ que tenÌa este proyecto en el que Èl habÌa trabajado un poco, y me llamÛ mucho la atenciÛn porque iba a aprender Django, iba a trabajar con Python, lenguaje que me gusta, y tambiÈn iba a usar la API de Github, que me parecÌa muy interesante.\\
-Me motivÛ bastante el hecho de que considero que es algo que funciona y es realmente ˙til.\\
+\section{¬øPor qu√© eleg√≠ este proyecto?}
+Ten√≠a claro que quer√≠a un proyecto que realmente me sirviese para aprender, y quer√≠a usar tecnolog√≠as relacionadas con la web.\\
+Me dirig√≠ al profesor Gregorio, porque me gust√≥ su forma de dar las clases. Adem√°s, una asignatura que imparti√≥, iba relacionado con la Web.\\
+Al hablar con √©l, me cont√≥ que ten√≠a este proyecto en el que √©l hab√≠a trabajado un poco, y me llam√≥ mucho la atenci√≥n porque iba a aprender Django, iba a trabajar con Python, lenguaje que me gusta, y tambi√©n iba a usar la API de Github, que me parec√≠a muy interesante.\\
+Me motiv√≥ bastante el hecho de que considero que es algo que funciona y es realmente √∫til.\\
 Como futuro ingeniero, me gusta hacer cosas que funcionen, y que tengan utilidad.
 
 
-\section{ValoraciÛn personal}
+\section{Valoraci√≥n personal}
 \label{sec:valoracion}
 
-Llegados a este punto, creo que es momento de echar la vista atr·s para ver como ha ido evolucionando el proyecto hasta ser lo que es ahora. Repasando todo lo que he ido evolucionando sÛlo puedo decir que estoy muy satisfecho con el trabajo realizado.\\
-En estos meses he compaginado trabajo-TFG-Pr·cticas. Algunos dÌas he ido al trabajo o a las pr·cticas, y en la cabeza sÛlo llevaba el TFG con alg˙n problema que me habÌa surgido, y en esas horas buscaba darle soluciÛn. Los mayores problemas venÌan cuando utilizaba tecnologÌas que no habÌa practicado nunca, y tenÌa alg˙n problema. Pero estoy muy contento de ver cÛmo he ido superando todas las adversidades que iban surgiendo.\\
-Creo que he complementado muy bien todo lo aprendido durante la carrera, puesto que he aplicado lo que ya sabÌa. Adem·s, he aprendido cosas que, estoy seguro, utilizarÈ alg˙n dÌa en alg˙n otro proyecto real.\\
-Con este proyecto, doy por finalizada una muy buena etapa de mi vida, para empezar otra completamente diferente. No sÈ como ser· la nueva etapa, pero para la que cierro sÛlo tengo buenas palabras.
+Llegados a este punto, creo que es momento de echar la vista atr√°s para ver como ha ido evolucionando el proyecto hasta ser lo que es ahora. Repasando todo lo que he ido evolucionando s√≥lo puedo decir que estoy muy satisfecho con el trabajo realizado.\\
+En estos meses he compaginado trabajo-TFG-Pr√°cticas. Algunos d√≠as he ido al trabajo o a las pr√°cticas, y en la cabeza s√≥lo llevaba el TFG con alg√∫n problema que me hab√≠a surgido, y en esas horas buscaba darle soluci√≥n. Los mayores problemas ven√≠an cuando utilizaba tecnolog√≠as que no hab√≠a practicado nunca, y ten√≠a alg√∫n problema. Pero estoy muy contento de ver c√≥mo he ido superando todas las adversidades que iban surgiendo.\\
+Creo que he complementado muy bien todo lo aprendido durante la carrera, puesto que he aplicado lo que ya sab√≠a. Adem√°s, he aprendido cosas que, estoy seguro, utilizar√© alg√∫n d√≠a en alg√∫n otro proyecto real.\\
+Con este proyecto, doy por finalizada una muy buena etapa de mi vida, para empezar otra completamente diferente. No s√© como ser√° la nueva etapa, pero para la que cierro s√≥lo tengo buenas palabras.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% AP…NDICE(S) %
+% AP√âNDICE(S) %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cleardoublepage
@@ -866,15 +866,15 @@ Con este proyecto, doy por finalizada una muy buena etapa de mi vida, para empez
 \label{app:Trabajo en Background}
 
 Una de las mejoras que propongo, la he intentado implementar para este mismo proyecto. Se trata de analizar los repositorios en background.\\
-Me parece una idea interesante, que garantiza una buena experiencia para el usuario con la aplicaciÛn.\\
-La mejora la tenemos programada y funciona perfectamente en todas las pruebas que hemos realizado localmente pero, por desgracia, el Host (www.pythonanywhere.com), donde decidimos subir la aplicaciÛn. Hoy en dÌa tiene deshabilitada la opciÛn de usar threads, tanto en la versiÛn gratuita, como en la versiÛn de pago.
-Para realizar esta mejora tuvimos que importar el mÛdulo ``threading'', aÒadiendo la siguiente lÌnea al principio del cÛdigo:
+Me parece una idea interesante, que garantiza una buena experiencia para el usuario con la aplicaci√≥n.\\
+La mejora la tenemos programada y funciona perfectamente en todas las pruebas que hemos realizado localmente pero, por desgracia, el Host (www.pythonanywhere.com), donde decidimos subir la aplicaci√≥n. Hoy en d√≠a tiene deshabilitada la opci√≥n de usar threads, tanto en la versi√≥n gratuita, como en la versi√≥n de pago.
+Para realizar esta mejora tuvimos que importar el m√≥dulo ``threading'', a√±adiendo la siguiente l√≠nea al principio del c√≥digo:
 \lstset{language=python, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
 import threading
 \end{lstlisting}
 
-Luego, modificamos la funciÛn a la que llamamos al pulsar el botÛn ``send'', creando un thread que se ocupe de hacer el an·lisis y aÒadir todos los datos a la base de datos, con estas lÌneas:
+Luego, modificamos la funci√≥n a la que llamamos al pulsar el bot√≥n ``send'', creando un thread que se ocupe de hacer el an√°lisis y a√±adir todos los datos a la base de datos, con estas l√≠neas:
 \lstset{language=python, breaklines=true, basicstyle=\footnotesize}
 \begin{lstlisting}[frame=single]
     hMiHilo = NewHilo(response)
@@ -893,18 +893,18 @@ class NewHilo(threading.Thread):
         PrincipalMain(self.ruta)
 \end{lstlisting}
 
-Siendo ``PrincipalMain'' la funciÛn que va a ejecutar analizando todo lo necesario, y enviando el email al usuario cuando la informaciÛn estÈ disponible.
+Siendo ``PrincipalMain'' la funci√≥n que va a ejecutar analizando todo lo necesario, y enviando el email al usuario cuando la informaci√≥n est√© disponible.
 
-Al modificar el funcionamiento interno de la aplicaciÛn, tambiÈn modificamos la p·gina principal de la aplicaciÛn, aÒadiendo un ``check'' donde el usuario confirmaba que entendÌa que cuando los datos estÈn disponibles recibir· un email. De esta forma, informamos al usuario de lo que va a ocurrir cuando pulse el botÛn ``Send''. AquÌ vemos como quedarÌa el HTML:
+Al modificar el funcionamiento interno de la aplicaci√≥n, tambi√©n modificamos la p√°gina principal de la aplicaci√≥n, a√±adiendo un ``check'' donde el usuario confirmaba que entend√≠a que cuando los datos est√©n disponibles recibir√° un email. De esta forma, informamos al usuario de lo que va a ocurrir cuando pulse el bot√≥n ``Send''. Aqu√≠ vemos como quedar√≠a el HTML:
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{img/threadppal.png} 
 \caption{Tiempo en analizar un repositorio}
 \end{figure}
 
-Al pulsar ``Send'' mandar· la informaciÛn, y en Background empezar· a analizar el repositorio, mientras el usuario permancer· en la misma p·gina, pudiendo asÌ introducir una nueva URL para ser analizada.
+Al pulsar ``Send'' mandar√° la informaci√≥n, y en Background empezar√° a analizar el repositorio, mientras el usuario permancer√° en la misma p√°gina, pudiendo as√≠ introducir una nueva URL para ser analizada.
 
-\section{Esquema del funcionamiento de la aplicaciÛn utilizando threads}
+\section{Esquema del funcionamiento de la aplicaci√≥n utilizando threads}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1]{img/DiagramaThread.png} 
@@ -923,11 +923,11 @@ Al pulsar ``Send'' mandar· la informaciÛn, y en Background empezar· a analizar e
 % para incluir las citas en la memoria
 \bibliographystyle{abbrv}
 \bibliography{memoria}  % mArgumento para crear un "pull request"emoria.bib es el nombre del fichero que contiene
-% las referencias bibliogr·ficas. Abre ese fichero y mira el formato que tiene,
+% las referencias bibliogr√°ficas. Abre ese fichero y mira el formato que tiene,
 % que se conoce como BibTeX. Hay muchos sitios que exportan referencias en
 % formato BibTeX. Prueba a buscar en http://scholar.google.com por referencias
-% y ver·s que lo puedes hacer de manera sencilla.
-% M·s informaciÛn: 
+% y ver√°s que lo puedes hacer de manera sencilla.
+% M√°s informaci√≥n: 
 % http://texblog.org/2014/04/22/using-google-scholar-to-download-bibtex-citations/
 
 \end{document}
